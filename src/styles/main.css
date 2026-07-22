@@ -414,8 +414,14 @@ input:focus-visible,
     grid-template-columns: 1fr;
   }
 
-  /* 移动端线路宽度缩小，避免挤成一团 */
+  /* 移动端线路宽度进一步缩小，避免手机上视觉过粗 */
   .map-line {
-    stroke-width: 6;
+    stroke-width: 4.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-line {
+    stroke-width: 3.5;
   }
 }
