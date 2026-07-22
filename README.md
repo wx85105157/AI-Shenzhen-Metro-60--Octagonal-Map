@@ -9,7 +9,7 @@ Because the app loads JSON/GeoJSON modules with `fetch`, use a simple static ser
 ### Python
 
 ```bash
-cd /home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map
+cd /path/to/AI-Shenzhen-Metro-60--Octagonal-Map
 python -m http.server 4173
 ```
 

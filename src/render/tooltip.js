@@ -1,15 +1,38 @@
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
+
+function getSafeUrl(url) {
+  if (!url) {
+    return '';
+  }
+
+  try {
+    const parsed = new URL(url, window.location.href);
+    return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
+  } catch {
+    return '';
+  }
+}
+
 function renderSource(source = {}) {
-  const sourceName = source.sourceName || '未核验 / Unverified';
-  const checkedAt = source.checkedAt || '未记录 / Not recorded';
-  const sourceUrl = source.sourceUrl
-    ? `<a href="${source.sourceUrl}" target="_blank" rel="noreferrer">查看来源 / Open source</a>`
+  const sourceName = escapeHtml(source.sourceName || '未核验 / Unverified');
+  const checkedAt = escapeHtml(source.checkedAt || '未记录 / Not recorded');
+  const safeUrl = getSafeUrl(source.sourceUrl);
+  const sourceUrl = safeUrl
+    ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noreferrer">查看来源 / Open source</a>`
     : '<span>暂无可公开链接 / No public link in demo</span>';
 
   return `
     <div class="tooltip-meta-row"><span>来源 / Source</span><strong>${sourceName}</strong></div>
     <div class="tooltip-meta-row"><span>核验日期 / Checked</span><strong>${checkedAt}</strong></div>
     <div class="tooltip-meta-row"><span>链接 / Link</span><strong>${sourceUrl}</strong></div>
-    ${source.notes ? `<p class="tooltip-note">${source.notes}</p>` : ''}
+    ${source.notes ? `<p class="tooltip-note">${escapeHtml(source.notes)}</p>` : ''}
   `;
 }
 
@@ -22,11 +45,11 @@ function renderServices(services = []) {
     .map(
       (service) => `
         <li>
-          <strong>${service.directionZh}</strong>
-          <span>${service.directionEn}</span>
-          <span>${service.serviceStatusZh} / ${service.serviceStatusEn}</span>
-          <span>首班 / First: ${service.firstTrain ?? service.firstTrainNote}</span>
-          <span>末班 / Last: ${service.lastTrain ?? service.lastTrainNote}</span>
+          <strong>${escapeHtml(service.directionZh)}</strong>
+          <span>${escapeHtml(service.directionEn)}</span>
+          <span>${escapeHtml(service.serviceStatusZh)} / ${escapeHtml(service.serviceStatusEn)}</span>
+          <span>首班 / First: ${escapeHtml(service.firstTrain ?? service.firstTrainNote)}</span>
+          <span>末班 / Last: ${escapeHtml(service.lastTrain ?? service.lastTrainNote)}</span>
         </li>
       `
     )
@@ -51,16 +74,16 @@ export function createTooltip({ element, stageElement }) {
     element.innerHTML = `
       <div class="tooltip-header">
         <div>
-          <p class="tooltip-kicker">${line.shortName} · ${line.englishName}</p>
-          <h3>${station.name.zh}</h3>
-          <p>${station.name.en}</p>
+          <p class="tooltip-kicker">${escapeHtml(line.shortName)} · ${escapeHtml(line.englishName)}</p>
+          <h3>${escapeHtml(station.name.zh)}</h3>
+          <p>${escapeHtml(station.name.en)}</p>
         </div>
-        <span class="tooltip-status">${station.status}</span>
+        <span class="tooltip-status">${escapeHtml(station.status)}</span>
       </div>
       <div class="tooltip-body">
-        <div class="tooltip-meta-row"><span>类别 / Category</span><strong>${line.category}</strong></div>
+        <div class="tooltip-meta-row"><span>类别 / Category</span><strong>${escapeHtml(line.category)}</strong></div>
         <div class="tooltip-meta-row"><span>站点类型 / Station</span><strong>${station.isTransfer ? '换乘预备 / Transfer-ready' : '普通站 / Standard'}</strong></div>
-        ${station.transferLines?.length ? `<div class="tooltip-meta-row"><span>换乘框架 / Transfers</span><strong>${station.transferLines.join(' · ')}</strong></div>` : ''}
+        ${station.transferLines?.length ? `<div class="tooltip-meta-row"><span>换乘框架 / Transfers</span><strong>${escapeHtml(station.transferLines.join(' · '))}</strong></div>` : ''}
         ${renderServices(services)}
         ${renderSource(station.source)}
       </div>

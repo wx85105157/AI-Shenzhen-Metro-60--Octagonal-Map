@@ -2,8 +2,9 @@ import { readFile } from 'node:fs/promises';
 import { access } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import { fileURLToPath } from 'node:url';
 
-const repoRoot = '/home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map';
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 async function readJson(relativePath) {
   const fullPath = path.join(repoRoot, relativePath);
