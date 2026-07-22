@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-22",
+    "demoNotice": "Phase 1 demonstration data only. This is not a complete or authoritative Shenzhen network dataset. Official source verification for production use is still pending.",
+    "calibrationReference": {
+      "imagePath": "assets/reference/shenzhen-bay-area-60-octagonal-reference.png",
+      "viewportWidth": 4964,
+      "viewportHeight": 2900
+    }
+  },
+  "items": [
+    {
+      "id": "szm-line-11-demo",
+      "shortName": "11号线",
+      "englishName": "Line 11",
+      "category": "metro",
+      "status": "operating",
+      "color": "#7a2e8e",
+      "strokeStyle": "solid",
+      "operator": "Shenzhen Metro (demonstration pending source verification)",
+      "isPhase1Demo": true,
+      "pathPoints": [
+        { "x": 2720, "y": 1720 },
+        { "x": 2470, "y": 1860 },
+        { "x": 2200, "y": 2010 },
+        { "x": 1950, "y": 2140 },
+        { "x": 1620, "y": 1920 },
+        { "x": 1320, "y": 1710 }
+      ],
+      "stationIds": [
+        "st-futian",
+        "st-chegongmiao",
+        "st-hongshuwan-south",
+        "st-houhai",
+        "st-qianhaiwan",
+        "st-airport-north"
+      ],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Real Shenzhen operating metro line sample used only to validate rendering and interaction. Line/station/service details must be re-checked against official operator material before production expansion."
+      }
+    }
+  ]
+}

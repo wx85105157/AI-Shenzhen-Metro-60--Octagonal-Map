@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-22",
+    "demoNotice": "Service directions are shown for interaction structure only. First/last train values are intentionally omitted because they are not confirmed from an official source available to the agent in this demo."
+  },
+  "items": [
+    {
+      "id": "svc-futian-to-airport-north",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-futian",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Direction shown for interaction demo only; operator timetable confirmation is pending."
+      }
+    },
+    {
+      "id": "svc-futian-origin",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-futian",
+      "directionZh": "往福田终到",
+      "directionEn": "Toward Futian terminal",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Placeholder terminal-direction messaging for UI structure; not a timetable claim."
+      }
+    },
+    {
+      "id": "svc-chegongmiao-to-airport-north",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-chegongmiao",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Operator timetable not confirmed in this Phase 1 demo."
+      }
+    },
+    {
+      "id": "svc-chegongmiao-to-futian",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-chegongmiao",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Direction shown without timetable estimation."
+      }
+    },
+    {
+      "id": "svc-hongshuwan-south-to-airport-north",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-hongshuwan-south",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Service messaging intentionally conservative."
+      }
+    },
+    {
+      "id": "svc-hongshuwan-south-to-futian",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-hongshuwan-south",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "No inferred timetable values are included."
+      }
+    },
+    {
+      "id": "svc-houhai-to-airport-north",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-houhai",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Direction/status sample only."
+      }
+    },
+    {
+      "id": "svc-houhai-to-futian",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-houhai",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "No operator timetable claim is made."
+      }
+    },
+    {
+      "id": "svc-qianhaiwan-to-airport-north",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-qianhaiwan",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Structure ready for future official service entries."
+      }
+    },
+    {
+      "id": "svc-qianhaiwan-to-futian",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-qianhaiwan",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Service data intentionally avoids unverified departure times."
+      }
+    },
+    {
+      "id": "svc-airport-north-to-futian",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-airport-north",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Terminal-direction entry for accessibility and tooltip structure."
+      }
+    },
+    {
+      "id": "svc-airport-north-origin",
+      "lineId": "szm-line-11-demo",
+      "stationId": "st-airport-north",
+      "directionZh": "往机场北终到",
+      "directionEn": "Toward Airport North terminal",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "UI-only placeholder, not a timetable publication."
+      }
+    }
+  ]
+}

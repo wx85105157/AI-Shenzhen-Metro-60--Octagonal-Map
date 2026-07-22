@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-22",
+    "demoNotice": "Real station names rendered as Phase 1 demonstration data pending official production-source verification."
+  },
+  "items": [
+    {
+      "id": "st-futian",
+      "name": { "zh": "福田", "en": "Futian" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 114.055, "lat": 22.541 },
+      "schematicPosition": { "x": 2720, "y": 1720 },
+      "labelPosition": { "dx": 0, "dy": -82, "anchor": "middle" },
+      "isTransfer": true,
+      "transferLines": ["Line 2", "Line 3"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Station naming is included for demo rendering. Coordinate values are provisional and must be replaced or verified in later phases."
+      }
+    },
+    {
+      "id": "st-chegongmiao",
+      "name": { "zh": "车公庙", "en": "Chegongmiao" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 114.033, "lat": 22.537 },
+      "schematicPosition": { "x": 2470, "y": 1860 },
+      "labelPosition": { "dx": 84, "dy": -30, "anchor": "start" },
+      "isTransfer": true,
+      "transferLines": ["Line 1", "Line 7", "Line 9"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Transfer styling is shown here to confirm a future multi-line interchange representation."
+      }
+    },
+    {
+      "id": "st-hongshuwan-south",
+      "name": { "zh": "红树湾南", "en": "Hongshuwan South" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 113.983, "lat": 22.526 },
+      "schematicPosition": { "x": 2200, "y": 2010 },
+      "labelPosition": { "dx": -70, "dy": 90, "anchor": "end" },
+      "isTransfer": true,
+      "transferLines": ["Line 9"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "This sample station helps demonstrate label offsets and transfer-ready symbol styling."
+      }
+    },
+    {
+      "id": "st-houhai",
+      "name": { "zh": "后海", "en": "Houhai" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 113.941, "lat": 22.520 },
+      "schematicPosition": { "x": 1950, "y": 2140 },
+      "labelPosition": { "dx": 72, "dy": -24, "anchor": "start" },
+      "isTransfer": true,
+      "transferLines": ["Line 2"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Provisional sample placement to demonstrate a diagonal path within the shared overlay coordinate system."
+      }
+    },
+    {
+      "id": "st-qianhaiwan",
+      "name": { "zh": "前海湾", "en": "Qianhaiwan" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 113.900, "lat": 22.534 },
+      "schematicPosition": { "x": 1620, "y": 1920 },
+      "labelPosition": { "dx": -84, "dy": -30, "anchor": "end" },
+      "isTransfer": true,
+      "transferLines": ["Line 1", "Line 5"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Transfer-ready sample station. Additional line rendering will be added in later phases after verification."
+      }
+    },
+    {
+      "id": "st-airport-north",
+      "name": { "zh": "机场北", "en": "Airport North" },
+      "lineIds": ["szm-line-11-demo"],
+      "category": "metro",
+      "status": "operating",
+      "geoPosition": { "lng": 113.815, "lat": 22.639 },
+      "schematicPosition": { "x": 1320, "y": 1710 },
+      "labelPosition": { "dx": 0, "dy": 96, "anchor": "middle" },
+      "isTransfer": true,
+      "transferLines": ["Line 20"],
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "Used to demonstrate a north-westward end segment and bilingual labeling inside the shared viewport."
+      }
+    }
+  ]
+}
