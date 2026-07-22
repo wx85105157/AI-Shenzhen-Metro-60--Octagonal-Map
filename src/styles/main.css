@@ -257,6 +257,12 @@ input:focus-visible,
   stroke-width: 4;
 }
 
+/* 换乘站多线颜色弧段 */
+.transfer-arc {
+  stroke: #ffffff;
+  stroke-width: 3;
+}
+
 .station-core {
   stroke: #ffffff;
   stroke-width: 4;

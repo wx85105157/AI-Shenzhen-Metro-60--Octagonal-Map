@@ -29,6 +29,43 @@ function stationVisible(station, linesById, filters) {
   return hasVisibleLine && filters.status.has(station.status) && filters.category.has(station.category);
 }
 
+/**
+ * 为换乘站生成多线颜色弧段（SVG path）。
+ * 将外圆等分成 N 段，每段染对应线路的颜色。
+ * @param {string[]} lineColors - 各线路颜色数组（最多8条）
+ * @param {number} r - 外圆半径
+ * @returns {SVGPathElement[]}
+ */
+function buildTransferArcs(lineColors, r) {
+  const n = lineColors.length;
+  if (n < 2) return [];
+
+  const arcs = [];
+  const sweep = (2 * Math.PI) / n;
+
+  for (let i = 0; i < n; i++) {
+    const startAngle = i * sweep - Math.PI / 2;
+    const endAngle = startAngle + sweep;
+    const x1 = r * Math.cos(startAngle);
+    const y1 = r * Math.sin(startAngle);
+    const x2 = r * Math.cos(endAngle);
+    const y2 = r * Math.sin(endAngle);
+    // 大弧标志：仅当弧度超过 π 时为 1
+    const largeArc = sweep > Math.PI ? 1 : 0;
+    const d = `M 0 0 L ${x1.toFixed(2)} ${y1.toFixed(2)} A ${r} ${r} 0 ${largeArc} 1 ${x2.toFixed(2)} ${y2.toFixed(2)} Z`;
+
+    arcs.push(
+      createSvgElement('path', {
+        d,
+        fill: lineColors[i],
+        class: 'transfer-arc',
+        'vector-effect': 'non-scaling-stroke'
+      })
+    );
+  }
+  return arcs;
+}
+
 export function createMapRenderer({
   svg,
   contentGroup,
@@ -109,23 +146,42 @@ export function createMapRenderer({
         return;
       }
 
+      // 收集该站所有线路的颜色（去重，保持线路顺序）
+      const stationLineColors = station.lineIds
+        .map((lid) => rendered.linesById.get(lid)?.color)
+        .filter(Boolean);
+
+      // aria-label 包含所有换乘线路名称
+      const lineNames = station.lineIds
+        .map((lid) => rendered.linesById.get(lid)?.shortName)
+        .filter(Boolean)
+        .join('、');
+
       const group = createSvgElement('g', {
         transform: `translate(${station.schematicPosition.x} ${station.schematicPosition.y})`,
         tabindex: 0,
         role: 'button',
         class: `station-node status-${station.status} category-${station.category}`,
         'data-station-id': station.id,
-        'aria-label': `${station.name.zh} ${station.name.en}，${primaryLine.shortName}`
+        'aria-label': `${station.name.zh} ${station.name.en}，${lineNames}`
       });
 
       if (station.isTransfer) {
-        group.append(
-          createSvgElement('circle', {
-            r: 18,
-            class: 'station-ring',
-            'vector-effect': 'non-scaling-stroke'
-          })
-        );
+        if (stationLineColors.length >= 2) {
+          // 换乘站：外圆用多色弧段展示各线路颜色
+          const arcGroup = createSvgElement('g', { class: 'transfer-arc-group' });
+          buildTransferArcs(stationLineColors, 20).forEach((arc) => arcGroup.append(arc));
+          group.append(arcGroup);
+        } else {
+          // 仅标注换乘但单线的站点：保持白色外圆样式
+          group.append(
+            createSvgElement('circle', {
+              r: 20,
+              class: 'station-ring',
+              'vector-effect': 'non-scaling-stroke'
+            })
+          );
+        }
       }
 
       group.append(

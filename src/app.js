@@ -107,9 +107,9 @@ async function init() {
       if (input.dataset.filterGroup === 'category' && !filters.category.size) {
         input.checked = true;
       }
-      if (window.__PHASE1_DATA__) {
+      if (window.__APP_DATA__) {
         tooltip.hide();
-        renderer.applyFilters(window.__PHASE1_DATA__, readFilters());
+        renderer.applyFilters(window.__APP_DATA__, readFilters());
       }
     });
   });
@@ -124,12 +124,12 @@ async function init() {
 
   try {
     const data = await loadData();
-    window.__PHASE1_DATA__ = data;
+    window.__APP_DATA__ = data;
     renderer.render(data);
     renderer.applyFilters(data, FILTER_DEFAULTS);
 
     setStatus(
-      `已加载 ${data.lines.items.length} 条线路、${data.stations.items.length} 个站点和 ${data.services.items.length} 条服务记录。当前为 Phase 1 演示样本。`
+      `已加载 ${data.lines.items.length} 条运营线路、${data.stations.items.length} 个站点。所有数据待官方核验。`
     );
   } catch (error) {
     console.error(error);
