@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-22",
+    "demoNotice": "Service directions are shown for interaction structure only. First/last train values are intentionally omitted because they are not confirmed from an official source available to the agent in this demo."
+  },
+  "items": [
+    {
+      "id": "svc-futian-to-airport-north",
+      "lineId": "szm-line-11",
+      "stationId": "st-futian",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-futian-origin",
+      "lineId": "szm-line-11",
+      "stationId": "st-futian",
+      "directionZh": "往福田终到",
+      "directionEn": "Toward Futian terminal",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-chegongmiao-to-airport-north",
+      "lineId": "szm-line-11",
+      "stationId": "st-chegongmiao",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-chegongmiao-to-futian",
+      "lineId": "szm-line-11",
+      "stationId": "st-chegongmiao",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-hongshuwan-south-to-airport-north",
+      "lineId": "szm-line-11",
+      "stationId": "st-hongshuwan-south",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-hongshuwan-south-to-futian",
+      "lineId": "szm-line-11",
+      "stationId": "st-hongshuwan-south",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-houhai-to-airport-north",
+      "lineId": "szm-line-11",
+      "stationId": "st-houhai",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-houhai-to-futian",
+      "lineId": "szm-line-11",
+      "stationId": "st-houhai",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-qianhaiwan-to-airport-north",
+      "lineId": "szm-line-11",
+      "stationId": "st-qianhaiwan",
+      "directionZh": "往机场北",
+      "directionEn": "Toward Airport North",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-qianhaiwan-to-futian",
+      "lineId": "szm-line-11",
+      "stationId": "st-qianhaiwan",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-airport-north-to-futian",
+      "lineId": "szm-line-11",
+      "stationId": "st-airport-north",
+      "directionZh": "往福田",
+      "directionEn": "Toward Futian",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    },
+    {
+      "id": "svc-airport-north-origin",
+      "lineId": "szm-line-11",
+      "stationId": "st-airport-north",
+      "directionZh": "往机场北终到",
+      "directionEn": "Toward Airport North terminal",
+      "serviceStatusZh": "运营中（演示）",
+      "serviceStatusEn": "Operating (demo)",
+      "firstTrain": null,
+      "lastTrain": null,
+      "firstTrainNote": "官方未公开 / Not published by operator in this demo",
+      "lastTrainNote": "官方未公开 / Not published by operator in this demo",
+      "source": {
+        "sourceName": "Phase 1 demonstration pending official source verification",
+        "sourceUrl": "",
+        "publishedAt": "",
+        "checkedAt": "2026-07-22",
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1272 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-22",
+    "phase": "阶段2 - 运营线路与站点数据（待官方核验）",
+    "notice": "本文件含深圳地铁全部已运营线路示意数据，须与官方资料比对核验。",
+    "calibrationReference": {
+      "imagePath": "assets/reference/shenzhen-bay-area-60-octagonal-reference.png",
+      "viewportWidth": 4964,
+      "viewportHeight": 2900
+    }
+  },
+  "items": [
+    {
+      "id": "szm-line-1",
+      "shortName": "1号线",
+      "englishName": "Line 1",
+      "category": "metro",
+      "status": "operating",
+      "color": "#3DBE77",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1350,
+          "y": 750
+        },
+        {
+          "x": 1500,
+          "y": 860
+        },
+        {
+          "x": 1700,
+          "y": 1200
+        },
+        {
+          "x": 1770,
+          "y": 1160
+        },
+        {
+          "x": 1850,
+          "y": 1230
+        },
+        {
+          "x": 1920,
+          "y": 1390
+        },
+        {
+          "x": 1960,
+          "y": 1460
+        },
+        {
+          "x": 1990,
+          "y": 1670
+        },
+        {
+          "x": 2050,
+          "y": 1700
+        },
+        {
+          "x": 2110,
+          "y": 1710
+        },
+        {
+          "x": 2240,
+          "y": 1730
+        },
+        {
+          "x": 2330,
+          "y": 1750
+        },
+        {
+          "x": 2400,
+          "y": 1740
+        },
+        {
+          "x": 2450,
+          "y": 1740
+        },
+        {
+          "x": 2510,
+          "y": 1760
+        },
+        {
+          "x": 2470,
+          "y": 1860
+        },
+        {
+          "x": 2660,
+          "y": 1760
+        },
+        {
+          "x": 2750,
+          "y": 1700
+        },
+        {
+          "x": 2810,
+          "y": 1710
+        },
+        {
+          "x": 2890,
+          "y": 1720
+        },
+        {
+          "x": 2940,
+          "y": 1730
+        },
+        {
+          "x": 2990,
+          "y": 1750
+        },
+        {
+          "x": 3020,
+          "y": 1760
+        },
+        {
+          "x": 3060,
+          "y": 1790
+        },
+        {
+          "x": 3090,
+          "y": 1810
+        }
+      ],
+      "stationIds": [
+        "st-airport-east",
+        "st-xingdong",
+        "st-sustc",
+        "st-liuxiandong",
+        "st-changlingshe",
+        "st-tanglang",
+        "st-xili",
+        "st-daxuecheng",
+        "st-taoyuan",
+        "st-shenda",
+        "st-gaoxinyuan",
+        "st-baishizhou",
+        "st-oct",
+        "st-octeast",
+        "st-zhuzilin",
+        "st-chegongmiao",
+        "st-xiangmihu",
+        "st-shoppingpark",
+        "st-gangsha",
+        "st-huaqianglu",
+        "st-kexueguan",
+        "st-concert",
+        "st-laojie",
+        "st-guomao",
+        "st-luohu"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-2",
+      "shortName": "2号线",
+      "englishName": "Line 2",
+      "category": "metro",
+      "status": "operating",
+      "color": "#E4007F",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1760,
+          "y": 2330
+        },
+        {
+          "x": 1790,
+          "y": 2310
+        },
+        {
+          "x": 1660,
+          "y": 2210
+        },
+        {
+          "x": 1480,
+          "y": 1950
+        },
+        {
+          "x": 1520,
+          "y": 1980
+        },
+        {
+          "x": 1580,
+          "y": 1900
+        },
+        {
+          "x": 1620,
+          "y": 1860
+        },
+        {
+          "x": 1620,
+          "y": 1920
+        },
+        {
+          "x": 1830,
+          "y": 1870
+        },
+        {
+          "x": 1910,
+          "y": 1910
+        },
+        {
+          "x": 1970,
+          "y": 1930
+        },
+        {
+          "x": 1950,
+          "y": 2140
+        },
+        {
+          "x": 2060,
+          "y": 1870
+        },
+        {
+          "x": 2120,
+          "y": 1870
+        },
+        {
+          "x": 2210,
+          "y": 1850
+        },
+        {
+          "x": 2470,
+          "y": 1860
+        },
+        {
+          "x": 2510,
+          "y": 1760
+        },
+        {
+          "x": 2440,
+          "y": 1680
+        },
+        {
+          "x": 2370,
+          "y": 1690
+        },
+        {
+          "x": 2400,
+          "y": 1740
+        },
+        {
+          "x": 2490,
+          "y": 1680
+        },
+        {
+          "x": 2580,
+          "y": 1660
+        },
+        {
+          "x": 2610,
+          "y": 1680
+        },
+        {
+          "x": 2660,
+          "y": 1710
+        },
+        {
+          "x": 2720,
+          "y": 1720
+        },
+        {
+          "x": 2750,
+          "y": 1700
+        },
+        {
+          "x": 2780,
+          "y": 1710
+        },
+        {
+          "x": 2830,
+          "y": 1680
+        },
+        {
+          "x": 2880,
+          "y": 1680
+        },
+        {
+          "x": 2940,
+          "y": 1730
+        },
+        {
+          "x": 2990,
+          "y": 1750
+        },
+        {
+          "x": 3030,
+          "y": 1800
+        },
+        {
+          "x": 3070,
+          "y": 1840
+        },
+        {
+          "x": 3120,
+          "y": 1890
+        }
+      ],
+      "stationIds": [
+        "st-chiwan",
+        "st-taiziwan",
+        "st-yueliangwan",
+        "st-qianwan",
+        "st-liyumen",
+        "st-tinghaidadao",
+        "st-haishangty",
+        "st-qianhaiwan",
+        "st-linhai",
+        "st-wanxia",
+        "st-haiyue",
+        "st-houhai",
+        "st-keyuan",
+        "st-shenwan",
+        "st-guimiaoluxi",
+        "st-chegongmiao",
+        "st-zhuzilin",
+        "st-octbei",
+        "st-worldwindow",
+        "st-oct",
+        "st-qushui",
+        "st-qiaoxiang",
+        "st-jingtian",
+        "st-lianhuaxi",
+        "st-futian",
+        "st-shimin",
+        "st-huizhan",
+        "st-gangshabei",
+        "st-huaqiangbei",
+        "st-yannan",
+        "st-concert",
+        "st-hubei",
+        "st-huangbeiling",
+        "st-xinxiu"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-3",
+      "shortName": "3号线",
+      "englishName": "Line 3",
+      "category": "metro",
+      "status": "operating",
+      "color": "#0070BB",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 2610,
+          "y": 1800
+        },
+        {
+          "x": 2660,
+          "y": 1820
+        },
+        {
+          "x": 2750,
+          "y": 1700
+        },
+        {
+          "x": 2720,
+          "y": 1720
+        },
+        {
+          "x": 2750,
+          "y": 1630
+        },
+        {
+          "x": 2780,
+          "y": 1550
+        },
+        {
+          "x": 2830,
+          "y": 1500
+        },
+        {
+          "x": 2880,
+          "y": 1440
+        },
+        {
+          "x": 2950,
+          "y": 1370
+        },
+        {
+          "x": 3020,
+          "y": 1390
+        },
+        {
+          "x": 3110,
+          "y": 1440
+        },
+        {
+          "x": 3350,
+          "y": 1190
+        },
+        {
+          "x": 3460,
+          "y": 1110
+        },
+        {
+          "x": 3730,
+          "y": 860
+        },
+        {
+          "x": 4010,
+          "y": 470
+        }
+      ],
+      "stationIds": [
+        "st-yitian",
+        "st-shixia",
+        "st-shoppingpark",
+        "st-futian",
+        "st-shaoniangong",
+        "st-lianhuacun",
+        "st-huaxin",
+        "st-tongxinling",
+        "st-hongling",
+        "st-taian",
+        "st-buji",
+        "st-mumianwan",
+        "st-dafen",
+        "st-danzhutou",
+        "st-shuanglong"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-4",
+      "shortName": "4号线",
+      "englishName": "Line 4",
+      "category": "metro",
+      "status": "operating",
+      "color": "#4E97D0",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 2720,
+          "y": 1980
+        },
+        {
+          "x": 2730,
+          "y": 1860
+        },
+        {
+          "x": 2750,
+          "y": 1700
+        },
+        {
+          "x": 2750,
+          "y": 1630
+        },
+        {
+          "x": 2750,
+          "y": 1540
+        },
+        {
+          "x": 2710,
+          "y": 1390
+        },
+        {
+          "x": 2600,
+          "y": 1210
+        },
+        {
+          "x": 2550,
+          "y": 1130
+        },
+        {
+          "x": 2550,
+          "y": 1000
+        },
+        {
+          "x": 2570,
+          "y": 800
+        },
+        {
+          "x": 2590,
+          "y": 650
+        },
+        {
+          "x": 2620,
+          "y": 510
+        },
+        {
+          "x": 2640,
+          "y": 340
+        }
+      ],
+      "stationIds": [
+        "st-ftport",
+        "st-fumin",
+        "st-shimin",
+        "st-shaoniangong",
+        "st-lianhuabei",
+        "st-shangmeilin",
+        "st-minle",
+        "st-sznorth",
+        "st-hongshan",
+        "st-longsheng",
+        "st-qinghu",
+        "st-longhua",
+        "st-qinghuabei"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-5",
+      "shortName": "5号线",
+      "englishName": "Line 5",
+      "category": "metro",
+      "status": "operating",
+      "color": "#B07430",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1480,
+          "y": 1950
+        },
+        {
+          "x": 1420,
+          "y": 1850
+        },
+        {
+          "x": 1350,
+          "y": 1710
+        },
+        {
+          "x": 1360,
+          "y": 1590
+        },
+        {
+          "x": 1410,
+          "y": 1540
+        },
+        {
+          "x": 1470,
+          "y": 1570
+        },
+        {
+          "x": 1550,
+          "y": 1500
+        },
+        {
+          "x": 1620,
+          "y": 1430
+        },
+        {
+          "x": 1770,
+          "y": 1160
+        },
+        {
+          "x": 1960,
+          "y": 1460
+        },
+        {
+          "x": 1920,
+          "y": 1390
+        },
+        {
+          "x": 2550,
+          "y": 1130
+        },
+        {
+          "x": 2740,
+          "y": 1060
+        },
+        {
+          "x": 3110,
+          "y": 1440
+        },
+        {
+          "x": 3020,
+          "y": 1390
+        },
+        {
+          "x": 3070,
+          "y": 1840
+        }
+      ],
+      "stationIds": [
+        "st-qianwan",
+        "st-chanwan",
+        "st-gushu",
+        "st-fanshen",
+        "st-baohua",
+        "st-baoancenter",
+        "st-baoti",
+        "st-bihaiwang",
+        "st-liuxiandong",
+        "st-xili",
+        "st-tanglang",
+        "st-sznorth",
+        "st-minzhi",
+        "st-buji",
+        "st-taian",
+        "st-huangbeiling"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-6",
+      "shortName": "6号线",
+      "englishName": "Line 6",
+      "category": "metro",
+      "status": "operating",
+      "color": "#6E8B3D",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1380,
+          "y": 100
+        },
+        {
+          "x": 1450,
+          "y": 100
+        },
+        {
+          "x": 1470,
+          "y": 140
+        },
+        {
+          "x": 1590,
+          "y": 260
+        },
+        {
+          "x": 1870,
+          "y": 100
+        },
+        {
+          "x": 1930,
+          "y": 100
+        },
+        {
+          "x": 1990,
+          "y": 100
+        },
+        {
+          "x": 2020,
+          "y": 100
+        },
+        {
+          "x": 2030,
+          "y": 100
+        },
+        {
+          "x": 2070,
+          "y": 100
+        },
+        {
+          "x": 2140,
+          "y": 100
+        },
+        {
+          "x": 1770,
+          "y": 1160
+        },
+        {
+          "x": 2550,
+          "y": 1130
+        }
+      ],
+      "stationIds": [
+        "st-songgang",
+        "st-shanghe",
+        "st-shajing",
+        "st-heyue",
+        "st-guanlan",
+        "st-guangmingcheng",
+        "st-fenghuang",
+        "st-bitongwan",
+        "st-gmguangchang",
+        "st-xingguo",
+        "st-heshuikou",
+        "st-liuxiandong",
+        "st-sznorth"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-6bz",
+      "shortName": "6号支线",
+      "englishName": "Line 6 Branch",
+      "category": "metro",
+      "status": "operating",
+      "color": "#8EAB45",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1930,
+          "y": 100
+        },
+        {
+          "x": 2020,
+          "y": 100
+        },
+        {
+          "x": 2120,
+          "y": 290
+        },
+        {
+          "x": 2170,
+          "y": 420
+        }
+      ],
+      "stationIds": [
+        "st-guangmingcheng",
+        "st-bitongwan",
+        "st-keji6bz",
+        "st-laodonglu"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-7",
+      "shortName": "7号线",
+      "englishName": "Line 7",
+      "category": "metro",
+      "status": "operating",
+      "color": "#F59600",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1960,
+          "y": 1460
+        },
+        {
+          "x": 2210,
+          "y": 1770
+        },
+        {
+          "x": 2260,
+          "y": 1770
+        },
+        {
+          "x": 2350,
+          "y": 1950
+        },
+        {
+          "x": 2470,
+          "y": 1860
+        },
+        {
+          "x": 2750,
+          "y": 1700
+        },
+        {
+          "x": 2890,
+          "y": 1720
+        },
+        {
+          "x": 2830,
+          "y": 1680
+        },
+        {
+          "x": 2880,
+          "y": 1680
+        },
+        {
+          "x": 2990,
+          "y": 1520
+        },
+        {
+          "x": 2950,
+          "y": 1370
+        },
+        {
+          "x": 3020,
+          "y": 1390
+        }
+      ],
+      "stationIds": [
+        "st-xili",
+        "st-gaoxinfuxi",
+        "st-datang",
+        "st-shenzhenbay",
+        "st-chegongmiao",
+        "st-shoppingpark",
+        "st-huaqianglu",
+        "st-gangshabei",
+        "st-huaqiangbei",
+        "st-bagualing",
+        "st-hongling",
+        "st-taian"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-9",
+      "shortName": "9号线",
+      "englishName": "Line 9",
+      "category": "metro",
+      "status": "operating",
+      "color": "#E8720C",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1480,
+          "y": 1950
+        },
+        {
+          "x": 2470,
+          "y": 1860
+        },
+        {
+          "x": 2240,
+          "y": 1730
+        },
+        {
+          "x": 2060,
+          "y": 1870
+        },
+        {
+          "x": 2450,
+          "y": 1740
+        },
+        {
+          "x": 2200,
+          "y": 2010
+        },
+        {
+          "x": 2750,
+          "y": 1730
+        },
+        {
+          "x": 2780,
+          "y": 1820
+        },
+        {
+          "x": 2970,
+          "y": 1710
+        },
+        {
+          "x": 3020,
+          "y": 1390
+        },
+        {
+          "x": 3110,
+          "y": 1440
+        },
+        {
+          "x": 3350,
+          "y": 1190
+        },
+        {
+          "x": 3460,
+          "y": 1110
+        },
+        {
+          "x": 4460,
+          "y": 1150
+        },
+        {
+          "x": 3120,
+          "y": 1650
+        }
+      ],
+      "stationIds": [
+        "st-qianwan",
+        "st-chegongmiao",
+        "st-gaoxinyuan",
+        "st-keyuan",
+        "st-octeast",
+        "st-hongshuwan-south",
+        "st-wenhua",
+        "st-xiangmei",
+        "st-nonglindao",
+        "st-taian",
+        "st-buji",
+        "st-mumianwan",
+        "st-dafen",
+        "st-dameisha",
+        "st-wenjin"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-10",
+      "shortName": "10号线",
+      "englishName": "Line 10",
+      "category": "metro",
+      "status": "operating",
+      "color": "#F592BE",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 2720,
+          "y": 1720
+        },
+        {
+          "x": 2810,
+          "y": 1710
+        },
+        {
+          "x": 2780,
+          "y": 1470
+        },
+        {
+          "x": 2710,
+          "y": 1390
+        },
+        {
+          "x": 2740,
+          "y": 1060
+        },
+        {
+          "x": 2550,
+          "y": 1130
+        },
+        {
+          "x": 2570,
+          "y": 800
+        },
+        {
+          "x": 3110,
+          "y": 1440
+        },
+        {
+          "x": 3340,
+          "y": 1280
+        },
+        {
+          "x": 4010,
+          "y": 470
+        }
+      ],
+      "stationIds": [
+        "st-futian",
+        "st-gangsha",
+        "st-meilin",
+        "st-shangmeilin",
+        "st-minzhi",
+        "st-sznorth",
+        "st-longsheng",
+        "st-buji",
+        "st-pinghu",
+        "st-shuanglong"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-11",
+      "shortName": "11号线",
+      "englishName": "Line 11",
+      "category": "metro",
+      "status": "operating",
+      "color": "#7A2E8E",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 2720,
+          "y": 1720
+        },
+        {
+          "x": 2470,
+          "y": 1860
+        },
+        {
+          "x": 2200,
+          "y": 2010
+        },
+        {
+          "x": 1950,
+          "y": 2140
+        },
+        {
+          "x": 1620,
+          "y": 1920
+        },
+        {
+          "x": 1600,
+          "y": 1770
+        },
+        {
+          "x": 1500,
+          "y": 1680
+        },
+        {
+          "x": 1320,
+          "y": 1710
+        },
+        {
+          "x": 1220,
+          "y": 1400
+        },
+        {
+          "x": 1080,
+          "y": 1290
+        },
+        {
+          "x": 830,
+          "y": 1020
+        }
+      ],
+      "stationIds": [
+        "st-futian",
+        "st-chegongmiao",
+        "st-hongshuwan-south",
+        "st-houhai",
+        "st-qianhaiwan",
+        "st-guiwan",
+        "st-nanyou",
+        "st-airport-north",
+        "st-xinqiao",
+        "st-gonghe",
+        "st-bitou"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-12",
+      "shortName": "12号线",
+      "englishName": "Line 12",
+      "category": "metro",
+      "status": "operating",
+      "color": "#9E1B1F",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1690,
+          "y": 2440
+        },
+        {
+          "x": 1760,
+          "y": 2330
+        },
+        {
+          "x": 1820,
+          "y": 2310
+        },
+        {
+          "x": 1840,
+          "y": 2240
+        },
+        {
+          "x": 1870,
+          "y": 2180
+        },
+        {
+          "x": 1910,
+          "y": 2100
+        },
+        {
+          "x": 1990,
+          "y": 1950
+        },
+        {
+          "x": 1620,
+          "y": 1920
+        },
+        {
+          "x": 1470,
+          "y": 1570
+        },
+        {
+          "x": 1500,
+          "y": 1460
+        },
+        {
+          "x": 1580,
+          "y": 1370
+        }
+      ],
+      "stationIds": [
+        "st-zuopaotai",
+        "st-chiwan",
+        "st-shekouport",
+        "st-shekoubei",
+        "st-nanhai",
+        "st-nanshan",
+        "st-gaoxin12",
+        "st-qianhaiwan",
+        "st-baoancenter",
+        "st-yandaijiao",
+        "st-guiwanwulu"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-16",
+      "shortName": "16号线",
+      "englishName": "Line 16",
+      "category": "metro",
+      "status": "operating",
+      "color": "#69A9D7",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 4010,
+          "y": 470
+        },
+        {
+          "x": 3890,
+          "y": 260
+        },
+        {
+          "x": 3950,
+          "y": 110
+        },
+        {
+          "x": 4030,
+          "y": 100
+        },
+        {
+          "x": 4140,
+          "y": 100
+        },
+        {
+          "x": 4370,
+          "y": 100
+        },
+        {
+          "x": 4470,
+          "y": 100
+        },
+        {
+          "x": 4630,
+          "y": 190
+        }
+      ],
+      "stationIds": [
+        "st-shuanglong",
+        "st-dayun",
+        "st-longchengsq",
+        "st-longfei",
+        "st-tongle",
+        "st-kengzi",
+        "st-tankeng",
+        "st-pingshan"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    },
+    {
+      "id": "szm-line-20",
+      "shortName": "20号线",
+      "englishName": "Line 20",
+      "category": "metro",
+      "status": "operating",
+      "color": "#AE2A2A",
+      "strokeStyle": "solid",
+      "operator": "深圳地铁集团有限公司（待核验）",
+      "isPhase1Demo": false,
+      "pathPoints": [
+        {
+          "x": 1320,
+          "y": 1710
+        },
+        {
+          "x": 1470,
+          "y": 1300
+        },
+        {
+          "x": 830,
+          "y": 1020
+        }
+      ],
+      "stationIds": [
+        "st-airport-north",
+        "st-baoan20",
+        "st-bitou"
+      ],
+      "source": {
+        "sourceName": "深圳地铁官网（待核验）",
+        "sourceUrl": "https://www.szmc.net/",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-22",
+        "notes": "待官方核验。数据来自公开资料整理，示意坐标为近似值，须与深圳地铁官方资料及参考图比对修正后方可作为权威数据。"
+      }
+    }
+  ]
+}

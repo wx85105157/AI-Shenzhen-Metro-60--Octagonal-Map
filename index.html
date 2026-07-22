@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>深圳 60° 八向轨道交通示意图 · 阶段2</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript-warning">此页面需要 JavaScript 才能加载交互式 SVG 地图。</div>
+    </noscript>
+
+    <div class="app-shell">
+      <aside class="control-panel" aria-label="地图控制面板">
+        <header class="panel-card panel-header">
+          <p class="eyebrow">阶段 2 / 待官方核验</p>
+          <h1>深圳 60° 八向轨道交通交互示意图</h1>
+          <p class="panel-muted">
+            包含深圳地铁全部已运营线路示意数据（14条线路，134个站点）。所有数据均待对照官方资料核验，示意坐标须对照参考图调整。
+          </p>
+        </header>
+
+        <section class="panel-card" aria-labelledby="reference-layer-heading">
+          <div class="section-heading-row">
+            <h2 id="reference-layer-heading">布局校验参考层</h2>
+            <span class="badge">默认关闭</span>
+          </div>
+          <p class="panel-muted">
+            该图层仅用于对照参考图布局，不代表正式发布底图。参考图与 SVG 共享同一缩放/拖拽坐标系。
+          </p>
+          <label class="checkbox-row">
+            <input type="checkbox" id="toggle-reference" />
+            <span>显示参考图叠加</span>
+          </label>
+          <label class="slider-field" for="reference-opacity">
+            <span>参考图透明度</span>
+            <input type="range" id="reference-opacity" min="0.1" max="1" step="0.05" value="0.45" />
+          </label>
+        </section>
+
+        <section class="panel-card" aria-labelledby="layers-heading">
+          <h2 id="layers-heading">图层 / 状态框架</h2>
+          <fieldset>
+            <legend>线路状态</legend>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="status" value="operating" checked /> <span>运营中 / Operating</span></label>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="status" value="under_construction" checked /> <span>在建 / Under construction</span></label>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="status" value="planned" checked /> <span>规划 / Planned</span></label>
+          </fieldset>
+          <fieldset>
+            <legend>线路类别</legend>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="category" value="metro" checked /> <span>地铁 / Metro</span></label>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="category" value="intercity_rail" checked /> <span>城际 / 国铁 / Intercity &amp; national rail</span></label>
+            <label class="checkbox-row"><input type="checkbox" data-filter-group="category" value="other_transit" checked /> <span>其他 / Other transit</span></label>
+          </fieldset>
+        </section>
+
+        <section class="panel-card" aria-labelledby="legend-heading">
+          <h2 id="legend-heading">图例与状态说明</h2>
+          <ul class="legend-list">
+            <li><span class="legend-swatch swatch-operating"></span><span>运营线路：实线 + 实心站点</span></li>
+            <li><span class="legend-swatch swatch-construction"></span><span>在建线路：虚线框架（Phase 1 预留）</span></li>
+            <li><span class="legend-swatch swatch-planned"></span><span>规划线路：灰线框架（Phase 1 预留）</span></li>
+            <li><span class="legend-transfer"></span><span>换乘预备站点：双环站点样式</span></li>
+          </ul>
+        </section>
+
+        <section class="panel-card panel-actions" aria-labelledby="actions-heading">
+          <h2 id="actions-heading">视图操作</h2>
+          <button type="button" id="reset-view" class="primary-button">重置视图 / Reset view</button>
+          <p class="panel-muted">支持鼠标滚轮/触控板缩放、拖拽平移，以及键盘聚焦站点查看信息。</p>
+        </section>
+
+        <section class="panel-card" aria-labelledby="status-heading">
+          <h2 id="status-heading">状态</h2>
+          <p id="status-text" class="status-text" role="status" aria-live="polite">正在加载阶段2数据…</p>
+        </section>
+      </aside>
+
+      <main class="map-shell" aria-label="交互式地图区域">
+        <div class="map-toolbar">
+          <p class="demo-notice">阶段2 · 全网运营线路数据（待官方核验）· 业务数据与渲染逻辑已分离</p>
+          <button type="button" id="reset-view-toolbar" class="secondary-button">Reset view</button>
+        </div>
+
+        <div class="map-stage" id="map-stage">
+          <svg
+            id="metro-map"
+            class="metro-map"
+            viewBox="0 0 4964 2900"
+            role="img"
+            aria-label="深圳 60° 八向轨道交通示意图，含参考图叠加层控制"
+          >
+            <title>深圳 60° 八向轨道交通示意图（阶段2）</title>
+            <desc>
+              交互式 SVG 视图：支持参考图叠加、缩放、拖拽、重置和站点信息提示。
+            </desc>
+            <rect class="map-background" x="0" y="0" width="4964" height="2900"></rect>
+            <g id="viewport-content"></g>
+          </svg>
+
+          <div id="station-tooltip" class="station-tooltip" role="dialog" aria-live="polite" aria-hidden="true"></div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
