@@ -123,7 +123,6 @@ export function createMapRenderer({
       const path = createSvgElement('path', {
         d: polylinePointsToPath(line.pathPoints),
         stroke: line.color,
-        'stroke-width': 12,
         'stroke-linejoin': 'round',
         'stroke-linecap': 'round',
         fill: 'none',

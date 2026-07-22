@@ -116,7 +116,7 @@ export function createViewportController({
       const dy = p1.clientY - p2.clientY;
       const newDist = Math.sqrt(dx * dx + dy * dy);
 
-      if (lastPinchDist !== null && newDist > 0) {
+      if (lastPinchDist !== null && newDist > 1) {
         const midX = (p1.clientX + p2.clientX) / 2;
         const midY = (p1.clientY + p2.clientY) / 2;
         zoomAt(midX, midY, newDist / lastPinchDist);
