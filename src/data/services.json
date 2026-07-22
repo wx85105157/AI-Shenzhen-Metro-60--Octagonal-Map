@@ -6,7 +6,7 @@
   "items": [
     {
       "id": "svc-futian-to-airport-north",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-futian",
       "directionZh": "往机场北",
       "directionEn": "Toward Airport North",
@@ -21,12 +21,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Direction shown for interaction demo only; operator timetable confirmation is pending."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-futian-origin",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-futian",
       "directionZh": "往福田终到",
       "directionEn": "Toward Futian terminal",
@@ -41,12 +41,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Placeholder terminal-direction messaging for UI structure; not a timetable claim."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-chegongmiao-to-airport-north",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-chegongmiao",
       "directionZh": "往机场北",
       "directionEn": "Toward Airport North",
@@ -61,12 +61,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Operator timetable not confirmed in this Phase 1 demo."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-chegongmiao-to-futian",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-chegongmiao",
       "directionZh": "往福田",
       "directionEn": "Toward Futian",
@@ -81,12 +81,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Direction shown without timetable estimation."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-hongshuwan-south-to-airport-north",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-hongshuwan-south",
       "directionZh": "往机场北",
       "directionEn": "Toward Airport North",
@@ -101,12 +101,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Service messaging intentionally conservative."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-hongshuwan-south-to-futian",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-hongshuwan-south",
       "directionZh": "往福田",
       "directionEn": "Toward Futian",
@@ -121,12 +121,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "No inferred timetable values are included."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-houhai-to-airport-north",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-houhai",
       "directionZh": "往机场北",
       "directionEn": "Toward Airport North",
@@ -141,12 +141,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Direction/status sample only."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-houhai-to-futian",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-houhai",
       "directionZh": "往福田",
       "directionEn": "Toward Futian",
@@ -161,12 +161,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "No operator timetable claim is made."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-qianhaiwan-to-airport-north",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-qianhaiwan",
       "directionZh": "往机场北",
       "directionEn": "Toward Airport North",
@@ -181,12 +181,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Structure ready for future official service entries."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-qianhaiwan-to-futian",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-qianhaiwan",
       "directionZh": "往福田",
       "directionEn": "Toward Futian",
@@ -201,12 +201,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Service data intentionally avoids unverified departure times."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-airport-north-to-futian",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-airport-north",
       "directionZh": "往福田",
       "directionEn": "Toward Futian",
@@ -221,12 +221,12 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "Terminal-direction entry for accessibility and tooltip structure."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     },
     {
       "id": "svc-airport-north-origin",
-      "lineId": "szm-line-11-demo",
+      "lineId": "szm-line-11",
       "stationId": "st-airport-north",
       "directionZh": "往机场北终到",
       "directionEn": "Toward Airport North terminal",
@@ -241,7 +241,7 @@
         "sourceUrl": "",
         "publishedAt": "",
         "checkedAt": "2026-07-22",
-        "notes": "UI-only placeholder, not a timetable publication."
+        "notes": "阶段2服务数据框架。首末班时刻待对照深圳地铁官网核验后补充，未公开时显示官方未公开，不估算。"
       }
     }
   ]
