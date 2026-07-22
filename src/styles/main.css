@@ -229,6 +229,10 @@ input:focus-visible,
   box-shadow: var(--shadow);
 }
 
+.map-line {
+  stroke-width: 12;
+}
+
 .metro-map {
   width: 100%;
   height: 100%;
@@ -408,5 +412,10 @@ input:focus-visible,
 
   .tooltip-meta-row {
     grid-template-columns: 1fr;
+  }
+
+  /* 移动端线路宽度缩小，避免挤成一团 */
+  .map-line {
+    stroke-width: 6;
   }
 }
