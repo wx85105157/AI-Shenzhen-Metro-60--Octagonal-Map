@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-23T15:16:48.714Z",
+    "purpose": "辅助执行“先补全站点，再做坐标校准”的阶段2工作流。",
+    "baselineStatus": "0/14 条线路已具备可比对基线"
+  },
+  "summary": {
+    "totalLines": 14,
+    "totalStations": 134,
+    "transferStations": 39,
+    "linesReadyForComparison": 0,
+    "linesPendingBaseline": 14,
+    "linesWithBacklinkIssues": 0
+  },
+  "items": [
+    {
+      "lineId": "szm-line-1",
+      "shortName": "1号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 25,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-liuxiandong",
+        "st-tanglang",
+        "st-xili",
+        "st-gaoxinyuan",
+        "st-oct",
+        "st-octeast",
+        "st-zhuzilin",
+        "st-chegongmiao",
+        "st-shoppingpark",
+        "st-gangsha",
+        "st-huaqianglu",
+        "st-concert"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-2",
+      "shortName": "2号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 34,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-chiwan",
+        "st-qianwan",
+        "st-qianhaiwan",
+        "st-houhai",
+        "st-keyuan",
+        "st-chegongmiao",
+        "st-zhuzilin",
+        "st-oct",
+        "st-futian",
+        "st-shimin",
+        "st-gangshabei",
+        "st-huaqiangbei",
+        "st-concert",
+        "st-huangbeiling"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-3",
+      "shortName": "3号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 15,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-shoppingpark",
+        "st-futian",
+        "st-shaoniangong",
+        "st-hongling",
+        "st-taian",
+        "st-buji",
+        "st-mumianwan",
+        "st-dafen",
+        "st-shuanglong"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-4",
+      "shortName": "4号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 13,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-shimin",
+        "st-shaoniangong",
+        "st-shangmeilin",
+        "st-sznorth",
+        "st-longsheng"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-5",
+      "shortName": "5号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 16,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-qianwan",
+        "st-baoancenter",
+        "st-liuxiandong",
+        "st-xili",
+        "st-tanglang",
+        "st-sznorth",
+        "st-minzhi",
+        "st-buji",
+        "st-taian",
+        "st-huangbeiling"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-6",
+      "shortName": "6号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 13,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-guangmingcheng",
+        "st-bitongwan",
+        "st-liuxiandong",
+        "st-sznorth"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-6bz",
+      "shortName": "6号支线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 4,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-guangmingcheng",
+        "st-bitongwan"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-7",
+      "shortName": "7号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 12,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-xili",
+        "st-chegongmiao",
+        "st-shoppingpark",
+        "st-huaqianglu",
+        "st-gangshabei",
+        "st-huaqiangbei",
+        "st-hongling",
+        "st-taian"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-9",
+      "shortName": "9号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 15,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-qianwan",
+        "st-chegongmiao",
+        "st-gaoxinyuan",
+        "st-keyuan",
+        "st-octeast",
+        "st-hongshuwan-south",
+        "st-taian",
+        "st-buji",
+        "st-mumianwan",
+        "st-dafen"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-10",
+      "shortName": "10号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 10,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-futian",
+        "st-gangsha",
+        "st-shangmeilin",
+        "st-minzhi",
+        "st-sznorth",
+        "st-longsheng",
+        "st-buji",
+        "st-shuanglong"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-11",
+      "shortName": "11号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 11,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-futian",
+        "st-chegongmiao",
+        "st-hongshuwan-south",
+        "st-houhai",
+        "st-qianhaiwan",
+        "st-airport-north",
+        "st-bitou"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-12",
+      "shortName": "12号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 11,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-chiwan",
+        "st-qianhaiwan",
+        "st-baoancenter"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-16",
+      "shortName": "16号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 8,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-shuanglong"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    },
+    {
+      "lineId": "szm-line-20",
+      "shortName": "20号线",
+      "baselineStatus": "pending_official_verification",
+      "currentStationCount": 3,
+      "expectedStationCount": null,
+      "currentTransferStationIds": [
+        "st-airport-north",
+        "st-bitou"
+      ],
+      "stationsMissingLineBacklink": [],
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": [],
+      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+    }
+  ]
+}
