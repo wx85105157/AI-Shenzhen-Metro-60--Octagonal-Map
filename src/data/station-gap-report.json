@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T15:18:29.975Z",
+    "generatedAt": "2026-07-23T15:26:02.785Z",
     "purpose": "辅助执行“先补全站点，再做坐标校准”的阶段2工作流。",
-    "baselineStatus": "0/14 条线路已具备可比对基线"
+    "baselineStatus": "1/14 条线路已具备可比对基线"
   },
   "summary": {
     "totalLines": 14,
     "totalStations": 134,
     "transferStations": 39,
-    "linesReadyForComparison": 0,
-    "linesPendingBaseline": 14,
+    "linesReadyForComparison": 1,
+    "linesPendingBaseline": 13,
     "linesWithBacklinkIssues": 0
   },
   "items": [
     {
       "lineId": "szm-line-1",
       "shortName": "1号线",
-      "baselineStatus": "pending_official_verification",
+      "baselineStatus": "in_review",
       "currentStationCount": 25,
-      "expectedStationCount": null,
+      "expectedStationCount": 30,
       "currentTransferStationIds": [
         "st-liuxiandong",
         "st-tanglang",
@@ -34,11 +34,108 @@
         "st-concert"
       ],
       "stationsMissingLineBacklink": [],
-      "canCompare": false,
-      "missingStations": [],
-      "unexpectedStations": [],
+      "canCompare": true,
+      "missingStations": [
+        {
+          "stationId": "st-line1-hourui",
+          "nameZh": "后瑞",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-gushu",
+          "nameZh": "固戍",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-line1-xixiang",
+          "nameZh": "西乡",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-line1-pingzhou",
+          "nameZh": "坪洲",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-baoti",
+          "nameZh": "宝体",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-baoancenter",
+          "nameZh": "宝安中心",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-line1-xinan",
+          "nameZh": "新安",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-qianhaiwan",
+          "nameZh": "前海湾",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-liyumen",
+          "nameZh": "鲤鱼门",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-line1-daxin",
+          "nameZh": "大新",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-worldwindow",
+          "nameZh": "世界之窗",
+          "nameEn": null
+        },
+        {
+          "stationId": "st-huizhan",
+          "nameZh": "会展中心",
+          "nameEn": null
+        }
+      ],
+      "unexpectedStations": [
+        {
+          "stationId": "st-xingdong",
+          "nameZh": "兴东",
+          "nameEn": "Xingdong"
+        },
+        {
+          "stationId": "st-sustc",
+          "nameZh": "南方科技大学",
+          "nameEn": "SUSTC"
+        },
+        {
+          "stationId": "st-liuxiandong",
+          "nameZh": "留仙洞",
+          "nameEn": "Liuxiandong"
+        },
+        {
+          "stationId": "st-changlingshe",
+          "nameZh": "长岭陂",
+          "nameEn": "Changlingshe"
+        },
+        {
+          "stationId": "st-tanglang",
+          "nameZh": "塘朗",
+          "nameEn": "Tanglang"
+        },
+        {
+          "stationId": "st-xili",
+          "nameZh": "西丽",
+          "nameEn": "Xili"
+        },
+        {
+          "stationId": "st-daxuecheng",
+          "nameZh": "大学城",
+          "nameEn": "University Town"
+        }
+      ],
       "outOfOrderStationIds": [],
-      "notes": "expectedStations 尚未补录，当前仅输出工作数据快照与自检结果。"
+      "notes": "已可与官方基线进行缺口与站序对比。"
     },
     {
       "lineId": "szm-line-2",
