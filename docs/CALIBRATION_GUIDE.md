@@ -10,10 +10,10 @@
 
 ## 输入文件
 
-- `/home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map/src/data/stations.json`
-- `/home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map/src/data/lines.json`
-- `/home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map/src/data/calibration-tasks.json`
-- `/home/runner/work/AI-Shenzhen-Metro-60--Octagonal-Map/AI-Shenzhen-Metro-60--Octagonal-Map/assets/reference/shenzhen-bay-area-60-octagonal-reference.png`
+- `src/data/stations.json`
+- `src/data/lines.json`
+- `src/data/calibration-tasks.json`
+- `assets/reference/shenzhen-bay-area-60-octagonal-reference.png`
 
 ## 操作顺序
 
