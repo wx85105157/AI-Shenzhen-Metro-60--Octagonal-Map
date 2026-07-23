@@ -18,13 +18,16 @@ function assert(condition, message) {
 }
 
 async function main() {
-  const [lines, stations, services, projects, cities, parks] = await Promise.all([
+  const [lines, stations, services, projects, cities, parks, baseline, gapReport, calibrationTasks] = await Promise.all([
     readJson('src/data/lines.json'),
     readJson('src/data/stations.json'),
     readJson('src/data/services.json'),
     readJson('src/data/projects.json'),
     readJson('src/data/cities.geojson'),
-    readJson('src/data/parks.geojson')
+    readJson('src/data/parks.geojson'),
+    readJson('src/data/station-baseline.json'),
+    readJson('src/data/station-gap-report.json'),
+    readJson('src/data/calibration-tasks.json')
   ]);
 
   assert(Array.isArray(lines.items), 'lines.items must be an array');
@@ -54,9 +57,43 @@ async function main() {
     assert(stationIds.has(service.stationId), `Unknown station ${service.stationId} referenced by service ${service.id}`);
   });
 
+  assert(Array.isArray(baseline.items), 'station-baseline.items must be an array');
+  baseline.items.forEach((entry) => {
+    assert(lineIds.has(entry.lineId), `Unknown line ${entry.lineId} referenced by station-baseline`);
+    assert(typeof entry.baselineStatus === 'string', `${entry.lineId} missing baselineStatus`);
+    assert(Array.isArray(entry.expectedStations), `${entry.lineId} expectedStations must be an array`);
+    assert(Array.isArray(entry.expectedTransferStationIds), `${entry.lineId} expectedTransferStationIds must be an array`);
+    entry.expectedStations.forEach((station) => {
+      assert(typeof station.stationId === 'string', `${entry.lineId} expectedStations entry missing stationId`);
+    });
+  });
+
+  assert(Array.isArray(gapReport.items), 'station-gap-report.items must be an array');
+  gapReport.items.forEach((item) => {
+    assert(lineIds.has(item.lineId), `Unknown line ${item.lineId} referenced by station-gap-report`);
+    assert(Number.isFinite(item.currentStationCount), `${item.lineId} currentStationCount must be finite`);
+    assert(Array.isArray(item.currentTransferStationIds), `${item.lineId} currentTransferStationIds must be an array`);
+    assert(Array.isArray(item.stationsMissingLineBacklink), `${item.lineId} stationsMissingLineBacklink must be an array`);
+    assert(Array.isArray(item.missingStations), `${item.lineId} missingStations must be an array`);
+    assert(Array.isArray(item.unexpectedStations), `${item.lineId} unexpectedStations must be an array`);
+    assert(Array.isArray(item.outOfOrderStationIds), `${item.lineId} outOfOrderStationIds must be an array`);
+  });
+
+  assert(Array.isArray(calibrationTasks.tasks), 'calibration-tasks.tasks must be an array');
+  calibrationTasks.tasks.forEach((task) => {
+    assert(stationIds.has(task.stationId), `Unknown station ${task.stationId} referenced by calibration-tasks`);
+    assert(['high', 'medium', 'low'].includes(task.priority), `${task.stationId} has invalid calibration priority`);
+    assert(task.relatedLineIds.every((lineId) => lineIds.has(lineId)), `${task.stationId} has unknown relatedLineIds`);
+    assert(Number.isFinite(task.currentSchematicPosition?.x), `${task.stationId} missing currentSchematicPosition.x`);
+    assert(Number.isFinite(task.suggestedSchematicPosition?.x), `${task.stationId} missing suggestedSchematicPosition.x`);
+    assert(Number.isFinite(task.deviationPx), `${task.stationId} deviationPx must be finite`);
+  });
+
   await access(path.join(repoRoot, 'assets/reference/shenzhen-bay-area-60-octagonal-reference.png'));
 
-  console.log(`Validated ${lines.items.length} lines, ${stations.items.length} stations, ${services.items.length} services.`);
+  console.log(
+    `Validated ${lines.items.length} lines, ${stations.items.length} stations, ${services.items.length} services, ${baseline.items.length} baseline entries, and ${calibrationTasks.tasks.length} calibration tasks.`
+  );
 }
 
 main().catch((error) => {

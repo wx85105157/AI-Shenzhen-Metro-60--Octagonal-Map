@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "snapshotDate": "2026-07-23",
+    "status": "baseline-template",
+    "purpose": "按官方资料维护逐线路站点基线，用于补全缺口盘点与站序核验。",
+    "boundaryRules": {
+      "includedStatuses": ["operating"],
+      "includeBranchesAsIndependentLines": true,
+      "includeCrossCityExtensionTerminals": false,
+      "mergeSameNameInterchangeStations": true,
+      "includeUnopenedStations": false,
+      "notes": "本文件只记录当前阶段纳入范围的权威基线。expectedStations 需按官方资料补录，不得从现有工作数据反推。"
+    }
+  },
+  "items": [
+    {
+      "lineId": "szm-line-1",
+      "shortName": "1号线",
+      "baselineStatus": "in_review",
+      "expectedStationCount": 30,
+      "expectedStations": [
+        { "stationId": "st-airport-east", "nameZh": "机场东" },
+        { "stationId": "st-line1-hourui", "nameZh": "后瑞" },
+        { "stationId": "st-gushu", "nameZh": "固戍" },
+        { "stationId": "st-line1-xixiang", "nameZh": "西乡" },
+        { "stationId": "st-line1-pingzhou", "nameZh": "坪洲" },
+        { "stationId": "st-baoti", "nameZh": "宝体" },
+        { "stationId": "st-baoancenter", "nameZh": "宝安中心" },
+        { "stationId": "st-line1-xinan", "nameZh": "新安" },
+        { "stationId": "st-qianhaiwan", "nameZh": "前海湾" },
+        { "stationId": "st-liyumen", "nameZh": "鲤鱼门" },
+        { "stationId": "st-line1-daxin", "nameZh": "大新" },
+        { "stationId": "st-taoyuan", "nameZh": "桃园" },
+        { "stationId": "st-shenda", "nameZh": "深大" },
+        { "stationId": "st-gaoxinyuan", "nameZh": "高新园" },
+        { "stationId": "st-baishizhou", "nameZh": "白石洲" },
+        { "stationId": "st-worldwindow", "nameZh": "世界之窗" },
+        { "stationId": "st-oct", "nameZh": "华侨城" },
+        { "stationId": "st-octeast", "nameZh": "侨城东" },
+        { "stationId": "st-zhuzilin", "nameZh": "竹子林" },
+        { "stationId": "st-chegongmiao", "nameZh": "车公庙" },
+        { "stationId": "st-xiangmihu", "nameZh": "香蜜湖" },
+        { "stationId": "st-shoppingpark", "nameZh": "购物公园" },
+        { "stationId": "st-huizhan", "nameZh": "会展中心" },
+        { "stationId": "st-gangsha", "nameZh": "岗厦" },
+        { "stationId": "st-huaqianglu", "nameZh": "华强路" },
+        { "stationId": "st-kexueguan", "nameZh": "科学馆" },
+        { "stationId": "st-concert", "nameZh": "大剧院" },
+        { "stationId": "st-laojie", "nameZh": "老街" },
+        { "stationId": "st-guomao", "nameZh": "国贸" },
+        { "stationId": "st-luohu", "nameZh": "罗湖" }
+      ],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "深圳地铁官网运营线路信息（1号线）",
+        "sourceUrl": "https://www.szmc.com.cn/",
+        "publishedAt": "官网实时页面（无单独发布日期）",
+        "checkedAt": "2026-07-23",
+        "notes": "已按官方线路信息补录站序，当前为首轮录入，待二次交叉核验。"
+      }
+    },
+    {
+      "lineId": "szm-line-2",
+      "shortName": "2号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-3",
+      "shortName": "3号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-4",
+      "shortName": "4号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-5",
+      "shortName": "5号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-6",
+      "shortName": "6号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-6bz",
+      "shortName": "6号支线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-7",
+      "shortName": "7号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-9",
+      "shortName": "9号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-10",
+      "shortName": "10号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-11",
+      "shortName": "11号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-12",
+      "shortName": "12号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-16",
+      "shortName": "16号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    },
+    {
+      "lineId": "szm-line-20",
+      "shortName": "20号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {
+        "sourceName": "待补充官方资料",
+        "sourceUrl": "",
+        "publishedAt": "待核验",
+        "checkedAt": "2026-07-23",
+        "notes": "待按官方线路图或运营方资料补录该线完整站序。"
+      }
+    }
+  ]
+}

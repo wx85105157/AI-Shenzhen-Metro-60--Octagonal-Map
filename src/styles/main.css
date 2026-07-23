@@ -230,7 +230,7 @@ input:focus-visible,
 }
 
 .map-line {
-  stroke-width: 12;
+  stroke-width: 2;
 }
 
 .metro-map {
@@ -412,16 +412,5 @@ input:focus-visible,
 
   .tooltip-meta-row {
     grid-template-columns: 1fr;
-  }
-
-  /* 移动端线路宽度进一步缩小，避免手机上视觉过粗 */
-  .map-line {
-    stroke-width: 4.5;
-  }
-}
-
-@media (max-width: 480px) {
-  .map-line {
-    stroke-width: 3.5;
   }
 }

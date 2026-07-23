@@ -1,0 +1,3560 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-23T15:37:20.419Z",
+    "projectionMethod": "基于 geoPosition 的等比例包围盒投影，映射到 4964x2900 参考图坐标系。",
+    "calibrationRules": [
+      "先按 suggestedSchematicPosition 初定位，再结合参考图微调。",
+      "换乘站与线路端点优先处理。",
+      "微调后仍须保持八向走线与可读间距。"
+    ]
+  },
+  "summary": {
+    "totalTasks": 134,
+    "highPriorityTasks": 51,
+    "mediumPriorityTasks": 76,
+    "lowPriorityTasks": 7,
+    "largeDeviationCount": 125
+  },
+  "tasks": [
+    {
+      "id": "cal-st-airport-east",
+      "stationId": "st-airport-east",
+      "nameZh": "机场东",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 800,
+        "y": 1100
+      },
+      "suggestedSchematicPosition": {
+        "x": 787.99,
+        "y": 1151.51
+      },
+      "geoPosition": {
+        "lng": 113.838,
+        "lat": 22.649
+      },
+      "deviationPx": 52.89,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-xingdong",
+      "stationId": "st-xingdong",
+      "nameZh": "兴东",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 900,
+        "y": 1200
+      },
+      "suggestedSchematicPosition": {
+        "x": 974.06,
+        "y": 1244.55
+      },
+      "geoPosition": {
+        "lng": 113.862,
+        "lat": 22.637
+      },
+      "deviationPx": 86.43,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-sustc",
+      "stationId": "st-sustc",
+      "nameZh": "南方科技大学",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1000,
+        "y": 1300
+      },
+      "suggestedSchematicPosition": {
+        "x": 1222.15,
+        "y": 1539.16
+      },
+      "geoPosition": {
+        "lng": 113.894,
+        "lat": 22.599
+      },
+      "deviationPx": 326.42,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-liuxiandong",
+      "stationId": "st-liuxiandong",
+      "nameZh": "留仙洞",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-5",
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1100,
+        "y": 1400
+      },
+      "suggestedSchematicPosition": {
+        "x": 1307.43,
+        "y": 1508.15
+      },
+      "geoPosition": {
+        "lng": 113.905,
+        "lat": 22.603
+      },
+      "deviationPx": 233.93,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-changlingshe",
+      "stationId": "st-changlingshe",
+      "nameZh": "长岭陂",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1200,
+        "y": 1500
+      },
+      "suggestedSchematicPosition": {
+        "x": 1400.47,
+        "y": 1570.17
+      },
+      "geoPosition": {
+        "lng": 113.917,
+        "lat": 22.595
+      },
+      "deviationPx": 212.4,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-tanglang",
+      "stationId": "st-tanglang",
+      "nameZh": "塘朗",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1300,
+        "y": 1600
+      },
+      "suggestedSchematicPosition": {
+        "x": 1493.5,
+        "y": 1701.97
+      },
+      "geoPosition": {
+        "lng": 113.929,
+        "lat": 22.578
+      },
+      "deviationPx": 218.72,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-xili",
+      "stationId": "st-xili",
+      "nameZh": "西丽",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-5",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1400,
+        "y": 1700
+      },
+      "suggestedSchematicPosition": {
+        "x": 1540.02,
+        "y": 1763.99
+      },
+      "geoPosition": {
+        "lng": 113.935,
+        "lat": 22.57
+      },
+      "deviationPx": 153.95,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-daxuecheng",
+      "stationId": "st-daxuecheng",
+      "nameZh": "大学城",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1500,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 1571.03,
+        "y": 1942.31
+      },
+      "geoPosition": {
+        "lng": 113.939,
+        "lat": 22.547
+      },
+      "deviationPx": 159.05,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-taoyuan",
+      "stationId": "st-taoyuan",
+      "nameZh": "桃园",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1600,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 1648.56,
+        "y": 1973.32
+      },
+      "geoPosition": {
+        "lng": 113.949,
+        "lat": 22.543
+      },
+      "deviationPx": 179.99,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shenda",
+      "stationId": "st-shenda",
+      "nameZh": "深大",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1700,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 1718.34,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 113.958,
+        "lat": 22.542
+      },
+      "deviationPx": 182.01,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-gaoxinyuan",
+      "stationId": "st-gaoxinyuan",
+      "nameZh": "高新园",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1800,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 1881.15,
+        "y": 1996.58
+      },
+      "geoPosition": {
+        "lng": 113.979,
+        "lat": 22.54
+      },
+      "deviationPx": 212.67,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-baishizhou",
+      "stationId": "st-baishizhou",
+      "nameZh": "白石洲",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1900,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 1989.69,
+        "y": 2012.09
+      },
+      "geoPosition": {
+        "lng": 113.993,
+        "lat": 22.538
+      },
+      "deviationPx": 230.27,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-oct",
+      "stationId": "st-oct",
+      "nameZh": "华侨城",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2000,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2082.72,
+        "y": 2004.33
+      },
+      "geoPosition": {
+        "lng": 114.005,
+        "lat": 22.539
+      },
+      "deviationPx": 220.44,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-octeast",
+      "stationId": "st-octeast",
+      "nameZh": "侨城东",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2100,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2144.75,
+        "y": 2004.33
+      },
+      "geoPosition": {
+        "lng": 114.013,
+        "lat": 22.539
+      },
+      "deviationPx": 209.17,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-zhuzilin",
+      "stationId": "st-zhuzilin",
+      "nameZh": "竹子林",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2200,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2214.52,
+        "y": 2019.84
+      },
+      "geoPosition": {
+        "lng": 114.022,
+        "lat": 22.537
+      },
+      "deviationPx": 220.32,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-chegongmiao",
+      "stationId": "st-chegongmiao",
+      "nameZh": "车公庙",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-2",
+        "szm-line-7",
+        "szm-line-9",
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2300,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2299.81,
+        "y": 2019.84
+      },
+      "geoPosition": {
+        "lng": 114.033,
+        "lat": 22.537
+      },
+      "deviationPx": 219.84,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-xiangmihu",
+      "stationId": "st-xiangmihu",
+      "nameZh": "香蜜湖",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2400,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2392.84,
+        "y": 2019.84
+      },
+      "geoPosition": {
+        "lng": 114.045,
+        "lat": 22.537
+      },
+      "deviationPx": 219.96,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shoppingpark",
+      "stationId": "st-shoppingpark",
+      "nameZh": "购物公园",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-3",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2500,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2509.14,
+        "y": 1973.32
+      },
+      "geoPosition": {
+        "lng": 114.06,
+        "lat": 22.543
+      },
+      "deviationPx": 173.56,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-gangsha",
+      "stationId": "st-gangsha",
+      "nameZh": "岗厦",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2600,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2578.91,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 114.069,
+        "lat": 22.542
+      },
+      "deviationPx": 182.3,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-huaqianglu",
+      "stationId": "st-huaqianglu",
+      "nameZh": "华强路",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2700,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2679.7,
+        "y": 1988.83
+      },
+      "geoPosition": {
+        "lng": 114.082,
+        "lat": 22.541
+      },
+      "deviationPx": 189.92,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-kexueguan",
+      "stationId": "st-kexueguan",
+      "nameZh": "科学馆",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "low",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2800,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2741.72,
+        "y": 1996.58
+      },
+      "geoPosition": {
+        "lng": 114.09,
+        "lat": 22.54
+      },
+      "deviationPx": 205.04,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-concert",
+      "stationId": "st-concert",
+      "nameZh": "大剧院",
+      "relatedLineIds": [
+        "szm-line-1",
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2900,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2795.99,
+        "y": 2012.09
+      },
+      "geoPosition": {
+        "lng": 114.097,
+        "lat": 22.538
+      },
+      "deviationPx": 236.22,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-laojie",
+      "stationId": "st-laojie",
+      "nameZh": "老街",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3000,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2842.51,
+        "y": 2019.84
+      },
+      "geoPosition": {
+        "lng": 114.103,
+        "lat": 22.537
+      },
+      "deviationPx": 270.43,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guomao",
+      "stationId": "st-guomao",
+      "nameZh": "国贸",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3100,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2881.28,
+        "y": 2050.85
+      },
+      "geoPosition": {
+        "lng": 114.108,
+        "lat": 22.533
+      },
+      "deviationPx": 332.81,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-luohu",
+      "stationId": "st-luohu",
+      "nameZh": "罗湖",
+      "relatedLineIds": [
+        "szm-line-1"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 3200,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2920.04,
+        "y": 2066.36
+      },
+      "geoPosition": {
+        "lng": 114.113,
+        "lat": 22.531
+      },
+      "deviationPx": 386.43,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-chiwan",
+      "stationId": "st-chiwan",
+      "nameZh": "赤湾",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1760,
+        "y": 2330
+      },
+      "suggestedSchematicPosition": {
+        "x": 1299.68,
+        "y": 2516.03
+      },
+      "geoPosition": {
+        "lng": 113.904,
+        "lat": 22.473
+      },
+      "deviationPx": 496.49,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-taiziwan",
+      "stationId": "st-taiziwan",
+      "nameZh": "太子湾",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1790,
+        "y": 2310
+      },
+      "suggestedSchematicPosition": {
+        "x": 1330.69,
+        "y": 2492.77
+      },
+      "geoPosition": {
+        "lng": 113.908,
+        "lat": 22.476
+      },
+      "deviationPx": 494.34,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-yueliangwan",
+      "stationId": "st-yueliangwan",
+      "nameZh": "月亮湾",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1660,
+        "y": 2210
+      },
+      "suggestedSchematicPosition": {
+        "x": 1167.88,
+        "y": 2407.49
+      },
+      "geoPosition": {
+        "lng": 113.887,
+        "lat": 22.487
+      },
+      "deviationPx": 530.27,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-qianwan",
+      "stationId": "st-qianwan",
+      "nameZh": "前湾",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-5",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1480,
+        "y": 1950
+      },
+      "suggestedSchematicPosition": {
+        "x": 950.8,
+        "y": 2190.4
+      },
+      "geoPosition": {
+        "lng": 113.859,
+        "lat": 22.515
+      },
+      "deviationPx": 581.24,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-liyumen",
+      "stationId": "st-liyumen",
+      "nameZh": "鲤鱼门",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1520,
+        "y": 1980
+      },
+      "suggestedSchematicPosition": {
+        "x": 1005.07,
+        "y": 2213.66
+      },
+      "geoPosition": {
+        "lng": 113.866,
+        "lat": 22.512
+      },
+      "deviationPx": 565.46,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-tinghaidadao",
+      "stationId": "st-tinghaidadao",
+      "nameZh": "听海大道",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1580,
+        "y": 1900
+      },
+      "suggestedSchematicPosition": {
+        "x": 1074.84,
+        "y": 2143.89
+      },
+      "geoPosition": {
+        "lng": 113.875,
+        "lat": 22.521
+      },
+      "deviationPx": 560.95,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-haishangty",
+      "stationId": "st-haishangty",
+      "nameZh": "海上田园",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1620,
+        "y": 1860
+      },
+      "suggestedSchematicPosition": {
+        "x": 1129.12,
+        "y": 2112.87
+      },
+      "geoPosition": {
+        "lng": 113.882,
+        "lat": 22.525
+      },
+      "deviationPx": 552.18,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-qianhaiwan",
+      "stationId": "st-qianhaiwan",
+      "nameZh": "前海湾",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-11",
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1620,
+        "y": 1920
+      },
+      "suggestedSchematicPosition": {
+        "x": 1268.67,
+        "y": 2043.1
+      },
+      "geoPosition": {
+        "lng": 113.9,
+        "lat": 22.534
+      },
+      "deviationPx": 372.27,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-linhai",
+      "stationId": "st-linhai",
+      "nameZh": "临海",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1830,
+        "y": 1870
+      },
+      "suggestedSchematicPosition": {
+        "x": 1377.21,
+        "y": 2120.63
+      },
+      "geoPosition": {
+        "lng": 113.914,
+        "lat": 22.524
+      },
+      "deviationPx": 517.53,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-wanxia",
+      "stationId": "st-wanxia",
+      "nameZh": "湾厦",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1910,
+        "y": 1910
+      },
+      "suggestedSchematicPosition": {
+        "x": 1478,
+        "y": 2151.64
+      },
+      "geoPosition": {
+        "lng": 113.927,
+        "lat": 22.52
+      },
+      "deviationPx": 494.99,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-haiyue",
+      "stationId": "st-haiyue",
+      "nameZh": "海月",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1970,
+        "y": 1930
+      },
+      "suggestedSchematicPosition": {
+        "x": 1547.77,
+        "y": 2167.15
+      },
+      "geoPosition": {
+        "lng": 113.936,
+        "lat": 22.518
+      },
+      "deviationPx": 484.27,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-houhai",
+      "stationId": "st-houhai",
+      "nameZh": "后海",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1950,
+        "y": 2140
+      },
+      "suggestedSchematicPosition": {
+        "x": 1586.54,
+        "y": 2151.64
+      },
+      "geoPosition": {
+        "lng": 113.941,
+        "lat": 22.52
+      },
+      "deviationPx": 363.65,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-keyuan",
+      "stationId": "st-keyuan",
+      "nameZh": "科苑",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2060,
+        "y": 1870
+      },
+      "suggestedSchematicPosition": {
+        "x": 1656.31,
+        "y": 2120.63
+      },
+      "geoPosition": {
+        "lng": 113.95,
+        "lat": 22.524
+      },
+      "deviationPx": 475.16,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-shenwan",
+      "stationId": "st-shenwan",
+      "nameZh": "深湾",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2120,
+        "y": 1870
+      },
+      "suggestedSchematicPosition": {
+        "x": 1741.6,
+        "y": 2120.63
+      },
+      "geoPosition": {
+        "lng": 113.961,
+        "lat": 22.524
+      },
+      "deviationPx": 453.87,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guimiaoluxi",
+      "stationId": "st-guimiaoluxi",
+      "nameZh": "桂庙路西",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2210,
+        "y": 1850
+      },
+      "suggestedSchematicPosition": {
+        "x": 1842.38,
+        "y": 2097.37
+      },
+      "geoPosition": {
+        "lng": 113.974,
+        "lat": 22.527
+      },
+      "deviationPx": 443.1,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-octbei",
+      "stationId": "st-octbei",
+      "nameZh": "侨城北",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2440,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 2129.24,
+        "y": 1950.06
+      },
+      "geoPosition": {
+        "lng": 114.011,
+        "lat": 22.546
+      },
+      "deviationPx": 411.71,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-worldwindow",
+      "stationId": "st-worldwindow",
+      "nameZh": "世界之窗",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2370,
+        "y": 1690
+      },
+      "suggestedSchematicPosition": {
+        "x": 2036.21,
+        "y": 1965.57
+      },
+      "geoPosition": {
+        "lng": 113.999,
+        "lat": 22.544
+      },
+      "deviationPx": 432.84,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-qushui",
+      "stationId": "st-qushui",
+      "nameZh": "曲水湾",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2490,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 2191.27,
+        "y": 1957.82
+      },
+      "geoPosition": {
+        "lng": 114.019,
+        "lat": 22.545
+      },
+      "deviationPx": 407.95,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-qiaoxiang",
+      "stationId": "st-qiaoxiang",
+      "nameZh": "侨香",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2580,
+        "y": 1660
+      },
+      "suggestedSchematicPosition": {
+        "x": 2299.81,
+        "y": 1934.56
+      },
+      "geoPosition": {
+        "lng": 114.033,
+        "lat": 22.548
+      },
+      "deviationPx": 392.29,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-jingtian",
+      "stationId": "st-jingtian",
+      "nameZh": "景田",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2610,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 2338.57,
+        "y": 1950.06
+      },
+      "geoPosition": {
+        "lng": 114.038,
+        "lat": 22.546
+      },
+      "deviationPx": 382.89,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-lianhuaxi",
+      "stationId": "st-lianhuaxi",
+      "nameZh": "莲花西",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2660,
+        "y": 1710
+      },
+      "suggestedSchematicPosition": {
+        "x": 2400.59,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 114.046,
+        "lat": 22.542
+      },
+      "deviationPx": 375.2,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-futian",
+      "stationId": "st-futian",
+      "nameZh": "福田",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-3",
+        "szm-line-10",
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2720,
+        "y": 1720
+      },
+      "suggestedSchematicPosition": {
+        "x": 2470.37,
+        "y": 1988.83
+      },
+      "geoPosition": {
+        "lng": 114.055,
+        "lat": 22.541
+      },
+      "deviationPx": 366.86,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-shimin",
+      "stationId": "st-shimin",
+      "nameZh": "市民中心",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2750,
+        "y": 1700
+      },
+      "suggestedSchematicPosition": {
+        "x": 2509.14,
+        "y": 1973.32
+      },
+      "geoPosition": {
+        "lng": 114.06,
+        "lat": 22.543
+      },
+      "deviationPx": 364.3,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-huizhan",
+      "stationId": "st-huizhan",
+      "nameZh": "会展中心",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2780,
+        "y": 1710
+      },
+      "suggestedSchematicPosition": {
+        "x": 2547.9,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 114.065,
+        "lat": 22.542
+      },
+      "deviationPx": 356.87,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-gangshabei",
+      "stationId": "st-gangshabei",
+      "nameZh": "岗厦北",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2830,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 2602.17,
+        "y": 1957.82
+      },
+      "geoPosition": {
+        "lng": 114.072,
+        "lat": 22.545
+      },
+      "deviationPx": 359.29,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-huaqiangbei",
+      "stationId": "st-huaqiangbei",
+      "nameZh": "华强北",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2880,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 2664.19,
+        "y": 1957.82
+      },
+      "geoPosition": {
+        "lng": 114.08,
+        "lat": 22.545
+      },
+      "deviationPx": 351.79,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-yannan",
+      "stationId": "st-yannan",
+      "nameZh": "燕南",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2940,
+        "y": 1730
+      },
+      "suggestedSchematicPosition": {
+        "x": 2741.72,
+        "y": 1996.58
+      },
+      "geoPosition": {
+        "lng": 114.09,
+        "lat": 22.54
+      },
+      "deviationPx": 332.23,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-hubei",
+      "stationId": "st-hubei",
+      "nameZh": "湖贝",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3030,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2850.26,
+        "y": 2058.6
+      },
+      "geoPosition": {
+        "lng": 114.104,
+        "lat": 22.532
+      },
+      "deviationPx": 314.93,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-huangbeiling",
+      "stationId": "st-huangbeiling",
+      "nameZh": "黄贝岭",
+      "relatedLineIds": [
+        "szm-line-2",
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 3070,
+        "y": 1840
+      },
+      "suggestedSchematicPosition": {
+        "x": 2896.78,
+        "y": 2089.62
+      },
+      "geoPosition": {
+        "lng": 114.11,
+        "lat": 22.528
+      },
+      "deviationPx": 303.83,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-xinxiu",
+      "stationId": "st-xinxiu",
+      "nameZh": "新秀",
+      "relatedLineIds": [
+        "szm-line-2"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 3120,
+        "y": 1890
+      },
+      "suggestedSchematicPosition": {
+        "x": 2958.8,
+        "y": 2136.13
+      },
+      "geoPosition": {
+        "lng": 114.118,
+        "lat": 22.522
+      },
+      "deviationPx": 294.22,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-yitian",
+      "stationId": "st-yitian",
+      "nameZh": "益田",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2610,
+        "y": 1800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2330.82,
+        "y": 2058.6
+      },
+      "geoPosition": {
+        "lng": 114.037,
+        "lat": 22.532
+      },
+      "deviationPx": 380.55,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-shixia",
+      "stationId": "st-shixia",
+      "nameZh": "石厦",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2660,
+        "y": 1820
+      },
+      "suggestedSchematicPosition": {
+        "x": 2392.84,
+        "y": 2074.11
+      },
+      "geoPosition": {
+        "lng": 114.045,
+        "lat": 22.53
+      },
+      "deviationPx": 368.71,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shaoniangong",
+      "stationId": "st-shaoniangong",
+      "nameZh": "少年宫",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2750,
+        "y": 1630
+      },
+      "suggestedSchematicPosition": {
+        "x": 2509.14,
+        "y": 1911.3
+      },
+      "geoPosition": {
+        "lng": 114.06,
+        "lat": 22.551
+      },
+      "deviationPx": 370.33,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-lianhuacun",
+      "stationId": "st-lianhuacun",
+      "nameZh": "莲花村",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2780,
+        "y": 1550
+      },
+      "suggestedSchematicPosition": {
+        "x": 2540.15,
+        "y": 1841.52
+      },
+      "geoPosition": {
+        "lng": 114.064,
+        "lat": 22.56
+      },
+      "deviationPx": 377.51,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-huaxin",
+      "stationId": "st-huaxin",
+      "nameZh": "华新",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2830,
+        "y": 1500
+      },
+      "suggestedSchematicPosition": {
+        "x": 2609.92,
+        "y": 1795.01
+      },
+      "geoPosition": {
+        "lng": 114.073,
+        "lat": 22.566
+      },
+      "deviationPx": 368.06,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-tongxinling",
+      "stationId": "st-tongxinling",
+      "nameZh": "通新岭",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2880,
+        "y": 1440
+      },
+      "suggestedSchematicPosition": {
+        "x": 2671.95,
+        "y": 1748.49
+      },
+      "geoPosition": {
+        "lng": 114.081,
+        "lat": 22.572
+      },
+      "deviationPx": 372.09,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-hongling",
+      "stationId": "st-hongling",
+      "nameZh": "红岭",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2950,
+        "y": 1370
+      },
+      "suggestedSchematicPosition": {
+        "x": 2749.48,
+        "y": 1686.46
+      },
+      "geoPosition": {
+        "lng": 114.091,
+        "lat": 22.58
+      },
+      "deviationPx": 374.64,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-taian",
+      "stationId": "st-taian",
+      "nameZh": "太安",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-5",
+        "szm-line-7",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 3020,
+        "y": 1390
+      },
+      "suggestedSchematicPosition": {
+        "x": 2842.51,
+        "y": 1701.97
+      },
+      "geoPosition": {
+        "lng": 114.103,
+        "lat": 22.578
+      },
+      "deviationPx": 358.93,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-buji",
+      "stationId": "st-buji",
+      "nameZh": "布吉",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-5",
+        "szm-line-9",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3110,
+        "y": 1440
+      },
+      "suggestedSchematicPosition": {
+        "x": 2951.05,
+        "y": 1748.49
+      },
+      "geoPosition": {
+        "lng": 114.117,
+        "lat": 22.572
+      },
+      "deviationPx": 347.03,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-mumianwan",
+      "stationId": "st-mumianwan",
+      "nameZh": "木棉湾",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3350,
+        "y": 1190
+      },
+      "suggestedSchematicPosition": {
+        "x": 3245.66,
+        "y": 1531.41
+      },
+      "geoPosition": {
+        "lng": 114.155,
+        "lat": 22.6
+      },
+      "deviationPx": 357,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-dafen",
+      "stationId": "st-dafen",
+      "nameZh": "大芬",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3460,
+        "y": 1110
+      },
+      "suggestedSchematicPosition": {
+        "x": 3377.46,
+        "y": 1461.63
+      },
+      "geoPosition": {
+        "lng": 114.172,
+        "lat": 22.609
+      },
+      "deviationPx": 361.19,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-danzhutou",
+      "stationId": "st-danzhutou",
+      "nameZh": "丹竹头",
+      "relatedLineIds": [
+        "szm-line-3"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3730,
+        "y": 860
+      },
+      "suggestedSchematicPosition": {
+        "x": 3710.84,
+        "y": 1244.55
+      },
+      "geoPosition": {
+        "lng": 114.215,
+        "lat": 22.637
+      },
+      "deviationPx": 385.03,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shuanglong",
+      "stationId": "st-shuanglong",
+      "nameZh": "双龙",
+      "relatedLineIds": [
+        "szm-line-3",
+        "szm-line-10",
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 4010,
+        "y": 470
+      },
+      "suggestedSchematicPosition": {
+        "x": 4051.97,
+        "y": 911.17
+      },
+      "geoPosition": {
+        "lng": 114.259,
+        "lat": 22.68
+      },
+      "deviationPx": 443.16,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-ftport",
+      "stationId": "st-ftport",
+      "nameZh": "福田口岸",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2720,
+        "y": 1980
+      },
+      "suggestedSchematicPosition": {
+        "x": 2470.37,
+        "y": 2213.66
+      },
+      "geoPosition": {
+        "lng": 114.055,
+        "lat": 22.512
+      },
+      "deviationPx": 341.92,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-fumin",
+      "stationId": "st-fumin",
+      "nameZh": "福民",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2730,
+        "y": 1860
+      },
+      "suggestedSchematicPosition": {
+        "x": 2485.88,
+        "y": 2105.12
+      },
+      "geoPosition": {
+        "lng": 114.057,
+        "lat": 22.526
+      },
+      "deviationPx": 345.95,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-lianhuabei",
+      "stationId": "st-lianhuabei",
+      "nameZh": "莲花北",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2750,
+        "y": 1540
+      },
+      "suggestedSchematicPosition": {
+        "x": 2501.38,
+        "y": 1833.77
+      },
+      "geoPosition": {
+        "lng": 114.059,
+        "lat": 22.561
+      },
+      "deviationPx": 384.85,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shangmeilin",
+      "stationId": "st-shangmeilin",
+      "nameZh": "上梅林",
+      "relatedLineIds": [
+        "szm-line-4",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2710,
+        "y": 1390
+      },
+      "suggestedSchematicPosition": {
+        "x": 2462.62,
+        "y": 1701.97
+      },
+      "geoPosition": {
+        "lng": 114.054,
+        "lat": 22.578
+      },
+      "deviationPx": 398.15,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-minle",
+      "stationId": "st-minle",
+      "nameZh": "民乐",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2600,
+        "y": 1210
+      },
+      "suggestedSchematicPosition": {
+        "x": 2323.07,
+        "y": 1546.91
+      },
+      "geoPosition": {
+        "lng": 114.036,
+        "lat": 22.598
+      },
+      "deviationPx": 436.12,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-sznorth",
+      "stationId": "st-sznorth",
+      "nameZh": "深圳北站",
+      "relatedLineIds": [
+        "szm-line-4",
+        "szm-line-5",
+        "szm-line-6",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2550,
+        "y": 1130
+      },
+      "suggestedSchematicPosition": {
+        "x": 2261.04,
+        "y": 1477.14
+      },
+      "geoPosition": {
+        "lng": 114.028,
+        "lat": 22.607
+      },
+      "deviationPx": 451.67,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-hongshan",
+      "stationId": "st-hongshan",
+      "nameZh": "红山",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2550,
+        "y": 1000
+      },
+      "suggestedSchematicPosition": {
+        "x": 2261.04,
+        "y": 1368.59
+      },
+      "geoPosition": {
+        "lng": 114.028,
+        "lat": 22.621
+      },
+      "deviationPx": 468.36,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-longsheng",
+      "stationId": "st-longsheng",
+      "nameZh": "龙胜",
+      "relatedLineIds": [
+        "szm-line-4",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2570,
+        "y": 800
+      },
+      "suggestedSchematicPosition": {
+        "x": 2292.05,
+        "y": 1198.03
+      },
+      "geoPosition": {
+        "lng": 114.032,
+        "lat": 22.643
+      },
+      "deviationPx": 485.47,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-qinghu",
+      "stationId": "st-qinghu",
+      "nameZh": "清湖",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2590,
+        "y": 650
+      },
+      "suggestedSchematicPosition": {
+        "x": 2315.31,
+        "y": 1066.23
+      },
+      "geoPosition": {
+        "lng": 114.035,
+        "lat": 22.66
+      },
+      "deviationPx": 498.7,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-longhua",
+      "stationId": "st-longhua",
+      "nameZh": "龙华",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2620,
+        "y": 510
+      },
+      "suggestedSchematicPosition": {
+        "x": 2346.32,
+        "y": 942.18
+      },
+      "geoPosition": {
+        "lng": 114.039,
+        "lat": 22.676
+      },
+      "deviationPx": 511.55,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-qinghuabei",
+      "stationId": "st-qinghuabei",
+      "nameZh": "清湖北",
+      "relatedLineIds": [
+        "szm-line-4"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2640,
+        "y": 340
+      },
+      "suggestedSchematicPosition": {
+        "x": 2369.58,
+        "y": 802.63
+      },
+      "geoPosition": {
+        "lng": 114.042,
+        "lat": 22.694
+      },
+      "deviationPx": 535.87,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-chanwan",
+      "stationId": "st-chanwan",
+      "nameZh": "铲湾",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1420,
+        "y": 1850
+      },
+      "suggestedSchematicPosition": {
+        "x": 881.02,
+        "y": 2097.37
+      },
+      "geoPosition": {
+        "lng": 113.85,
+        "lat": 22.527
+      },
+      "deviationPx": 593.04,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-gushu",
+      "stationId": "st-gushu",
+      "nameZh": "固戍",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1350,
+        "y": 1710
+      },
+      "suggestedSchematicPosition": {
+        "x": 787.99,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 113.838,
+        "lat": 22.542
+      },
+      "deviationPx": 623.97,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-fanshen",
+      "stationId": "st-fanshen",
+      "nameZh": "翻身",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1360,
+        "y": 1590
+      },
+      "suggestedSchematicPosition": {
+        "x": 803.49,
+        "y": 1880.29
+      },
+      "geoPosition": {
+        "lng": 113.84,
+        "lat": 22.555
+      },
+      "deviationPx": 627.67,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-baohua",
+      "stationId": "st-baohua",
+      "nameZh": "宝华",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1410,
+        "y": 1540
+      },
+      "suggestedSchematicPosition": {
+        "x": 865.52,
+        "y": 1833.77
+      },
+      "geoPosition": {
+        "lng": 113.848,
+        "lat": 22.561
+      },
+      "deviationPx": 618.68,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-baoancenter",
+      "stationId": "st-baoancenter",
+      "nameZh": "宝安中心",
+      "relatedLineIds": [
+        "szm-line-5",
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1470,
+        "y": 1570
+      },
+      "suggestedSchematicPosition": {
+        "x": 935.29,
+        "y": 1857.03
+      },
+      "geoPosition": {
+        "lng": 113.857,
+        "lat": 22.558
+      },
+      "deviationPx": 606.88,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-baoti",
+      "stationId": "st-baoti",
+      "nameZh": "宝体",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1550,
+        "y": 1500
+      },
+      "suggestedSchematicPosition": {
+        "x": 1036.08,
+        "y": 1802.76
+      },
+      "geoPosition": {
+        "lng": 113.87,
+        "lat": 22.565
+      },
+      "deviationPx": 596.47,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-bihaiwang",
+      "stationId": "st-bihaiwang",
+      "nameZh": "碧海湾",
+      "relatedLineIds": [
+        "szm-line-5"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1620,
+        "y": 1430
+      },
+      "suggestedSchematicPosition": {
+        "x": 1121.36,
+        "y": 1740.73
+      },
+      "geoPosition": {
+        "lng": 113.881,
+        "lat": 22.573
+      },
+      "deviationPx": 587.53,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-minzhi",
+      "stationId": "st-minzhi",
+      "nameZh": "民治",
+      "relatedLineIds": [
+        "szm-line-5",
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2740,
+        "y": 1060
+      },
+      "suggestedSchematicPosition": {
+        "x": 2493.63,
+        "y": 1422.86
+      },
+      "geoPosition": {
+        "lng": 114.058,
+        "lat": 22.614
+      },
+      "deviationPx": 438.59,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-songgang",
+      "stationId": "st-songgang",
+      "nameZh": "松岗",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1380,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 834.5,
+        "y": 461.5
+      },
+      "geoPosition": {
+        "lng": 113.844,
+        "lat": 22.738
+      },
+      "deviationPx": 654.41,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-shanghe",
+      "stationId": "st-shanghe",
+      "nameZh": "上合",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1450,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 912.03,
+        "y": 523.53
+      },
+      "geoPosition": {
+        "lng": 113.854,
+        "lat": 22.73
+      },
+      "deviationPx": 684.68,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shajing",
+      "stationId": "st-shajing",
+      "nameZh": "沙井",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1470,
+        "y": 140
+      },
+      "suggestedSchematicPosition": {
+        "x": 943.05,
+        "y": 624.31
+      },
+      "geoPosition": {
+        "lng": 113.858,
+        "lat": 22.717
+      },
+      "deviationPx": 715.7,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-heyue",
+      "stationId": "st-heyue",
+      "nameZh": "和悦",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1590,
+        "y": 260
+      },
+      "suggestedSchematicPosition": {
+        "x": 1090.35,
+        "y": 732.85
+      },
+      "geoPosition": {
+        "lng": 113.877,
+        "lat": 22.703
+      },
+      "deviationPx": 687.92,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guanlan",
+      "stationId": "st-guanlan",
+      "nameZh": "观澜",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1870,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1423.73,
+        "y": 523.53
+      },
+      "geoPosition": {
+        "lng": 113.92,
+        "lat": 22.73
+      },
+      "deviationPx": 615.25,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guangmingcheng",
+      "stationId": "st-guangmingcheng",
+      "nameZh": "光明城",
+      "relatedLineIds": [
+        "szm-line-6",
+        "szm-line-6bz"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1930,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1509.01,
+        "y": 306.44
+      },
+      "geoPosition": {
+        "lng": 113.931,
+        "lat": 22.758
+      },
+      "deviationPx": 468.88,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-fenghuang",
+      "stationId": "st-fenghuang",
+      "nameZh": "凤凰城",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1990,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1578.78,
+        "y": 422.74
+      },
+      "geoPosition": {
+        "lng": 113.94,
+        "lat": 22.743
+      },
+      "deviationPx": 522.75,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-bitongwan",
+      "stationId": "st-bitongwan",
+      "nameZh": "碧桐湾",
+      "relatedLineIds": [
+        "szm-line-6",
+        "szm-line-6bz"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2020,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1609.8,
+        "y": 577.8
+      },
+      "geoPosition": {
+        "lng": 113.944,
+        "lat": 22.723
+      },
+      "deviationPx": 629.73,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-gmguangchang",
+      "stationId": "st-gmguangchang",
+      "nameZh": "光明广场",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2030,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1625.3,
+        "y": 290.94
+      },
+      "geoPosition": {
+        "lng": 113.946,
+        "lat": 22.76
+      },
+      "deviationPx": 447.48,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-xingguo",
+      "stationId": "st-xingguo",
+      "nameZh": "兴国",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2070,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1679.57,
+        "y": 360.71
+      },
+      "geoPosition": {
+        "lng": 113.953,
+        "lat": 22.751
+      },
+      "deviationPx": 469.47,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-heshuikou",
+      "stationId": "st-heshuikou",
+      "nameZh": "合水口",
+      "relatedLineIds": [
+        "szm-line-6"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2140,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1757.1,
+        "y": 414.98
+      },
+      "geoPosition": {
+        "lng": 113.963,
+        "lat": 22.744
+      },
+      "deviationPx": 495.81,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-keji6bz",
+      "stationId": "st-keji6bz",
+      "nameZh": "科学城",
+      "relatedLineIds": [
+        "szm-line-6bz"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2120,
+        "y": 290
+      },
+      "suggestedSchematicPosition": {
+        "x": 1733.84,
+        "y": 756.11
+      },
+      "geoPosition": {
+        "lng": 113.96,
+        "lat": 22.7
+      },
+      "deviationPx": 605.29,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-laodonglu",
+      "stationId": "st-laodonglu",
+      "nameZh": "劳动路",
+      "relatedLineIds": [
+        "szm-line-6bz"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 2170,
+        "y": 420
+      },
+      "suggestedSchematicPosition": {
+        "x": 1795.87,
+        "y": 864.65
+      },
+      "geoPosition": {
+        "lng": 113.968,
+        "lat": 22.686
+      },
+      "deviationPx": 581.11,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-gaoxinfuxi",
+      "stationId": "st-gaoxinfuxi",
+      "nameZh": "高新飞西",
+      "relatedLineIds": [
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2210,
+        "y": 1770
+      },
+      "suggestedSchematicPosition": {
+        "x": 1850.14,
+        "y": 2035.35
+      },
+      "geoPosition": {
+        "lng": 113.975,
+        "lat": 22.535
+      },
+      "deviationPx": 447.11,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-datang",
+      "stationId": "st-datang",
+      "nameZh": "大唐",
+      "relatedLineIds": [
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2260,
+        "y": 1770
+      },
+      "suggestedSchematicPosition": {
+        "x": 1904.41,
+        "y": 2035.35
+      },
+      "geoPosition": {
+        "lng": 113.982,
+        "lat": 22.535
+      },
+      "deviationPx": 443.68,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shenzhenbay",
+      "stationId": "st-shenzhenbay",
+      "nameZh": "深圳湾",
+      "relatedLineIds": [
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2350,
+        "y": 1950
+      },
+      "suggestedSchematicPosition": {
+        "x": 2020.7,
+        "y": 2190.4
+      },
+      "geoPosition": {
+        "lng": 113.997,
+        "lat": 22.515
+      },
+      "deviationPx": 407.71,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-bagualing",
+      "stationId": "st-bagualing",
+      "nameZh": "八卦岭",
+      "relatedLineIds": [
+        "szm-line-7"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2990,
+        "y": 1520
+      },
+      "suggestedSchematicPosition": {
+        "x": 2803.75,
+        "y": 1818.26
+      },
+      "geoPosition": {
+        "lng": 114.098,
+        "lat": 22.563
+      },
+      "deviationPx": 351.64,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-hongshuwan-south",
+      "stationId": "st-hongshuwan-south",
+      "nameZh": "红树湾南",
+      "relatedLineIds": [
+        "szm-line-9",
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2200,
+        "y": 2010
+      },
+      "suggestedSchematicPosition": {
+        "x": 1912.16,
+        "y": 2105.12
+      },
+      "geoPosition": {
+        "lng": 113.983,
+        "lat": 22.526
+      },
+      "deviationPx": 303.15,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-wenhua",
+      "stationId": "st-wenhua",
+      "nameZh": "文化中心",
+      "relatedLineIds": [
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2750,
+        "y": 1730
+      },
+      "suggestedSchematicPosition": {
+        "x": 2509.14,
+        "y": 1996.58
+      },
+      "geoPosition": {
+        "lng": 114.06,
+        "lat": 22.54
+      },
+      "deviationPx": 359.27,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-xiangmei",
+      "stationId": "st-xiangmei",
+      "nameZh": "香梅",
+      "relatedLineIds": [
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2780,
+        "y": 1820
+      },
+      "suggestedSchematicPosition": {
+        "x": 2547.9,
+        "y": 2074.11
+      },
+      "geoPosition": {
+        "lng": 114.065,
+        "lat": 22.53
+      },
+      "deviationPx": 344.15,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-nonglindao",
+      "stationId": "st-nonglindao",
+      "nameZh": "农林道",
+      "relatedLineIds": [
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2970,
+        "y": 1710
+      },
+      "suggestedSchematicPosition": {
+        "x": 2780.49,
+        "y": 1981.08
+      },
+      "geoPosition": {
+        "lng": 114.095,
+        "lat": 22.542
+      },
+      "deviationPx": 330.75,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-dameisha",
+      "stationId": "st-dameisha",
+      "nameZh": "大梅沙",
+      "relatedLineIds": [
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 4460,
+        "y": 1150
+      },
+      "suggestedSchematicPosition": {
+        "x": 4602.42,
+        "y": 1500.39
+      },
+      "geoPosition": {
+        "lng": 114.33,
+        "lat": 22.604
+      },
+      "deviationPx": 378.23,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-wenjin",
+      "stationId": "st-wenjin",
+      "nameZh": "文锦",
+      "relatedLineIds": [
+        "szm-line-9"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 3120,
+        "y": 1650
+      },
+      "suggestedSchematicPosition": {
+        "x": 2958.8,
+        "y": 1926.8
+      },
+      "geoPosition": {
+        "lng": 114.118,
+        "lat": 22.549
+      },
+      "deviationPx": 320.32,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-meilin",
+      "stationId": "st-meilin",
+      "nameZh": "梅林",
+      "relatedLineIds": [
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 2780,
+        "y": 1470
+      },
+      "suggestedSchematicPosition": {
+        "x": 2540.15,
+        "y": 1771.75
+      },
+      "geoPosition": {
+        "lng": 114.064,
+        "lat": 22.569
+      },
+      "deviationPx": 385.46,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-pinghu",
+      "stationId": "st-pinghu",
+      "nameZh": "平湖",
+      "relatedLineIds": [
+        "szm-line-10"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3340,
+        "y": 1280
+      },
+      "suggestedSchematicPosition": {
+        "x": 3230.16,
+        "y": 1608.93
+      },
+      "geoPosition": {
+        "lng": 114.153,
+        "lat": 22.59
+      },
+      "deviationPx": 346.78,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guiwan",
+      "stationId": "st-guiwan",
+      "nameZh": "桂湾",
+      "relatedLineIds": [
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1600,
+        "y": 1770
+      },
+      "suggestedSchematicPosition": {
+        "x": 1098.1,
+        "y": 2035.35
+      },
+      "geoPosition": {
+        "lng": 113.878,
+        "lat": 22.535
+      },
+      "deviationPx": 567.73,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-nanyou",
+      "stationId": "st-nanyou",
+      "nameZh": "南油",
+      "relatedLineIds": [
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1500,
+        "y": 1680
+      },
+      "suggestedSchematicPosition": {
+        "x": 974.06,
+        "y": 1957.82
+      },
+      "geoPosition": {
+        "lng": 113.862,
+        "lat": 22.545
+      },
+      "deviationPx": 594.81,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-airport-north",
+      "stationId": "st-airport-north",
+      "nameZh": "机场北",
+      "relatedLineIds": [
+        "szm-line-11",
+        "szm-line-20"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1320,
+        "y": 1710
+      },
+      "suggestedSchematicPosition": {
+        "x": 609.67,
+        "y": 1229.04
+      },
+      "geoPosition": {
+        "lng": 113.815,
+        "lat": 22.639
+      },
+      "deviationPx": 857.84,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-xinqiao",
+      "stationId": "st-xinqiao",
+      "nameZh": "新桥",
+      "relatedLineIds": [
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1220,
+        "y": 1400
+      },
+      "suggestedSchematicPosition": {
+        "x": 632.93,
+        "y": 1709.72
+      },
+      "geoPosition": {
+        "lng": 113.818,
+        "lat": 22.577
+      },
+      "deviationPx": 663.76,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-gonghe",
+      "stationId": "st-gonghe",
+      "nameZh": "共和",
+      "relatedLineIds": [
+        "szm-line-11"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1080,
+        "y": 1290
+      },
+      "suggestedSchematicPosition": {
+        "x": 462.36,
+        "y": 1616.69
+      },
+      "geoPosition": {
+        "lng": 113.796,
+        "lat": 22.589
+      },
+      "deviationPx": 698.72,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-bitou",
+      "stationId": "st-bitou",
+      "nameZh": "碧头",
+      "relatedLineIds": [
+        "szm-line-11",
+        "szm-line-20"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": true,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 830,
+        "y": 1020
+      },
+      "suggestedSchematicPosition": {
+        "x": 160,
+        "y": 1384.1
+      },
+      "geoPosition": {
+        "lng": 113.757,
+        "lat": 22.619
+      },
+      "deviationPx": 762.54,
+      "notes": "换乘站优先校准，需保证多线共用同一示意坐标。"
+    },
+    {
+      "id": "cal-st-zuopaotai",
+      "stationId": "st-zuopaotai",
+      "nameZh": "左炮台东",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1690,
+        "y": 2440
+      },
+      "suggestedSchematicPosition": {
+        "x": 1214.4,
+        "y": 2609.06
+      },
+      "geoPosition": {
+        "lng": 113.893,
+        "lat": 22.461
+      },
+      "deviationPx": 504.75,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-shekouport",
+      "stationId": "st-shekouport",
+      "nameZh": "蛇口港",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1820,
+        "y": 2310
+      },
+      "suggestedSchematicPosition": {
+        "x": 1369.46,
+        "y": 2492.77
+      },
+      "geoPosition": {
+        "lng": 113.913,
+        "lat": 22.476
+      },
+      "deviationPx": 486.2,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-shekoubei",
+      "stationId": "st-shekoubei",
+      "nameZh": "蛇口北",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1840,
+        "y": 2240
+      },
+      "suggestedSchematicPosition": {
+        "x": 1392.71,
+        "y": 2438.5
+      },
+      "geoPosition": {
+        "lng": 113.916,
+        "lat": 22.483
+      },
+      "deviationPx": 489.36,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-nanhai",
+      "stationId": "st-nanhai",
+      "nameZh": "南海",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1870,
+        "y": 2180
+      },
+      "suggestedSchematicPosition": {
+        "x": 1431.48,
+        "y": 2384.23
+      },
+      "geoPosition": {
+        "lng": 113.921,
+        "lat": 22.49
+      },
+      "deviationPx": 483.75,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-nanshan",
+      "stationId": "st-nanshan",
+      "nameZh": "南山",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1910,
+        "y": 2100
+      },
+      "suggestedSchematicPosition": {
+        "x": 1478,
+        "y": 2314.45
+      },
+      "geoPosition": {
+        "lng": 113.927,
+        "lat": 22.499
+      },
+      "deviationPx": 482.3,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-gaoxin12",
+      "stationId": "st-gaoxin12",
+      "nameZh": "高新区",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1990,
+        "y": 1950
+      },
+      "suggestedSchematicPosition": {
+        "x": 1571.03,
+        "y": 2182.65
+      },
+      "geoPosition": {
+        "lng": 113.939,
+        "lat": 22.516
+      },
+      "deviationPx": 479.23,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-yandaijiao",
+      "stationId": "st-yandaijiao",
+      "nameZh": "烟台角",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1500,
+        "y": 1460
+      },
+      "suggestedSchematicPosition": {
+        "x": 981.81,
+        "y": 1763.99
+      },
+      "geoPosition": {
+        "lng": 113.863,
+        "lat": 22.57
+      },
+      "deviationPx": 600.78,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-guiwanwulu",
+      "stationId": "st-guiwanwulu",
+      "nameZh": "桂湾五路",
+      "relatedLineIds": [
+        "szm-line-12"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 1580,
+        "y": 1370
+      },
+      "suggestedSchematicPosition": {
+        "x": 1074.84,
+        "y": 1686.46
+      },
+      "geoPosition": {
+        "lng": 113.875,
+        "lat": 22.58
+      },
+      "deviationPx": 596.1,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-dayun",
+      "stationId": "st-dayun",
+      "nameZh": "大运",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3890,
+        "y": 260
+      },
+      "suggestedSchematicPosition": {
+        "x": 3904.66,
+        "y": 732.85
+      },
+      "geoPosition": {
+        "lng": 114.24,
+        "lat": 22.703
+      },
+      "deviationPx": 473.08,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-longchengsq",
+      "stationId": "st-longchengsq",
+      "nameZh": "龙城广场",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 3950,
+        "y": 110
+      },
+      "suggestedSchematicPosition": {
+        "x": 3982.19,
+        "y": 601.06
+      },
+      "geoPosition": {
+        "lng": 114.25,
+        "lat": 22.72
+      },
+      "deviationPx": 492.11,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-longfei",
+      "stationId": "st-longfei",
+      "nameZh": "龙飞大道",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 4030,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 4075.23,
+        "y": 469.26
+      },
+      "geoPosition": {
+        "lng": 114.262,
+        "lat": 22.737
+      },
+      "deviationPx": 372.02,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-tongle",
+      "stationId": "st-tongle",
+      "nameZh": "同乐",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 4140,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 4214.78,
+        "y": 383.97
+      },
+      "geoPosition": {
+        "lng": 114.28,
+        "lat": 22.748
+      },
+      "deviationPx": 293.65,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-kengzi",
+      "stationId": "st-kengzi",
+      "nameZh": "坑梓",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 4370,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 4486.13,
+        "y": 477.01
+      },
+      "geoPosition": {
+        "lng": 114.315,
+        "lat": 22.736
+      },
+      "deviationPx": 394.49,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-tankeng",
+      "stationId": "st-tankeng",
+      "nameZh": "坦坑",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 4470,
+        "y": 100
+      },
+      "suggestedSchematicPosition": {
+        "x": 4617.93,
+        "y": 554.54
+      },
+      "geoPosition": {
+        "lng": 114.332,
+        "lat": 22.726
+      },
+      "deviationPx": 478.01,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    },
+    {
+      "id": "cal-st-pingshan",
+      "stationId": "st-pingshan",
+      "nameZh": "坪山",
+      "relatedLineIds": [
+        "szm-line-16"
+      ],
+      "status": "pending",
+      "priority": "high",
+      "isTransfer": false,
+      "isEndpoint": true,
+      "currentSchematicPosition": {
+        "x": 4630,
+        "y": 190
+      },
+      "suggestedSchematicPosition": {
+        "x": 4804,
+        "y": 670.83
+      },
+      "geoPosition": {
+        "lng": 114.356,
+        "lat": 22.711
+      },
+      "deviationPx": 511.34,
+      "notes": "线路端点优先校准，用于稳定整条线的走向。"
+    },
+    {
+      "id": "cal-st-baoan20",
+      "stationId": "st-baoan20",
+      "nameZh": "宝安",
+      "relatedLineIds": [
+        "szm-line-20"
+      ],
+      "status": "pending",
+      "priority": "medium",
+      "isTransfer": false,
+      "isEndpoint": false,
+      "currentSchematicPosition": {
+        "x": 1470,
+        "y": 1300
+      },
+      "suggestedSchematicPosition": {
+        "x": 935.29,
+        "y": 1624.44
+      },
+      "geoPosition": {
+        "lng": 113.857,
+        "lat": 22.588
+      },
+      "deviationPx": 625.44,
+      "notes": "先按地理投影建议值初定位，再结合参考图微调。"
+    }
+  ]
+}

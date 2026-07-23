@@ -157,6 +157,98 @@ Recommended future feature properties:
 - `labelPosition`
 - `source`
 
+## `station-baseline.json`
+
+用于维护“应有站点清单”的权威基线模板。该文件**只能**根据官方资料填写，不能从当前工作数据反推。
+
+```json
+{
+  "meta": {
+    "snapshotDate": "2026-07-23",
+    "status": "baseline-template",
+    "boundaryRules": {}
+  },
+  "items": [
+    {
+      "lineId": "szm-line-1",
+      "shortName": "1号线",
+      "baselineStatus": "pending_official_verification",
+      "expectedStationCount": null,
+      "expectedStations": [],
+      "expectedTransferStationIds": [],
+      "source": {}
+    }
+  ]
+}
+```
+
+说明：
+
+- `boundaryRules` 用于明确是否纳入支线、跨市延伸终点、未开通站等边界规则。
+- `expectedStations` 的顺序即官方站序。
+- `baselineStatus` 建议值：`pending_official_verification`、`in_review`、`verified`。
+
+## `station-gap-report.json`
+
+由审计脚本生成的当前库 vs 基线对账结果。
+
+```json
+{
+  "meta": {},
+  "summary": {},
+  "items": [
+    {
+      "lineId": "szm-line-1",
+      "currentStationCount": 25,
+      "expectedStationCount": null,
+      "canCompare": false,
+      "missingStations": [],
+      "unexpectedStations": [],
+      "outOfOrderStationIds": []
+    }
+  ]
+}
+```
+
+说明：
+
+- 当 `expectedStations` 为空时，`canCompare` 为 `false`，表示该线路尚未具备与官方基线的缺口比较条件。
+- `stationsMissingLineBacklink` 用于发现 `lines.json` 与 `stations.json` 的双向归属不一致问题。
+
+## `calibration-tasks.json`
+
+由审计脚本生成的坐标校准任务清单，用于执行“两阶段定位法”。
+
+```json
+{
+  "meta": {},
+  "summary": {},
+  "tasks": [
+    {
+      "stationId": "st-futian",
+      "priority": "high",
+      "currentSchematicPosition": { "x": 2700, "y": 1720 },
+      "suggestedSchematicPosition": { "x": 2684.5, "y": 1708.2 },
+      "deviationPx": 19.48
+    }
+  ]
+}
+```
+
+说明：
+
+- `suggestedSchematicPosition` 由 `geoPosition` 等比例投影得到，只作为初定位建议值。
+- `priority` 规则默认优先换乘站和线路端点，其次处理偏差较大的普通站。
+- 最终 `schematicPosition` 仍需以参考图叠加和八向走线规则做人工微调。
+
+## 补全与校准工作流
+
+1. 先在 `station-baseline.json` 中按官方资料补录每条线的 `expectedStations`。
+2. 运行审计脚本生成 `station-gap-report.json`，查看缺站、归属错误与站序异常。
+3. 补齐 `stations.json` / `lines.json` 后再次运行审计，直到缺口收敛。
+4. 再依据 `calibration-tasks.json` 中的建议坐标与优先级校准 `schematicPosition`。
+5. 每批修改后运行 `node tests/validate-data.mjs` 做结构校验。
+
 ## Demonstration-data rule
 
 Any Phase 1 record that is real-world but not yet verified against an official production source must be explicitly marked as demonstration data in metadata and/or `source.notes`. Rendering code should present those values as provisional rather than authoritative.
