@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T15:16:48.716Z",
+    "generatedAt": "2026-07-23T15:18:29.976Z",
     "projectionMethod": "基于 geoPosition 的等比例包围盒投影，映射到 4964x2900 参考图坐标系。",
     "calibrationRules": [
       "先按 suggestedSchematicPosition 初定位，再结合参考图微调。",

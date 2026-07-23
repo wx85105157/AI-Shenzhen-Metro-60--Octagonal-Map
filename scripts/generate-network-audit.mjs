@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = path.join(repoRoot, 'src/data');
 const viewport = { width: 4964, height: 2900, padding: 160 };
+const MEDIUM_PRIORITY_DEVIATION_PX = 220;
 
 async function readJson(relativePath) {
   const raw = await readFile(path.join(repoRoot, relativePath), 'utf8');
@@ -133,7 +134,8 @@ function buildCalibrationTasks(lines, stations) {
     const suggested = project(station);
     const deviationPx = Number(distance(station.schematicPosition, suggested).toFixed(2));
     const isEndpoint = endpointStationIds.has(station.id);
-    const priority = station.isTransfer || isEndpoint ? 'high' : deviationPx >= 220 ? 'medium' : 'low';
+    const priority =
+      station.isTransfer || isEndpoint ? 'high' : deviationPx >= MEDIUM_PRIORITY_DEVIATION_PX ? 'medium' : 'low';
 
     return {
       id: `cal-${station.id}`,
